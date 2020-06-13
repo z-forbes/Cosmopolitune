@@ -1,5 +1,7 @@
 package program.extras;
 
+import program.spotify.GetPlaylistTracks;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Locale;
@@ -20,6 +22,9 @@ public class ReturnObject {
     /** the JS to be used to display the final map **/
     private String mapJS;
     public String getMapJS() { return mapJS; }
+    /** HTML to embed the user's playlist **/
+    private String playlistEmbed;
+    public String getPlaylistEmbed() { return playlistEmbed; }
 
     /* UNSUCCESSFUL GENERATION **/
     /** the message to be shown in the case of an error **/
@@ -32,16 +37,19 @@ public class ReturnObject {
 
 
     /** assigns values if program is successful **/
-    public void successful(HashMap<String, String> artists) {
+    public void successful(HashMap<String, String> artists, String playlistLink) {
         this.success = true;
         this.successMessage = getSuccessMessage(artists);
-        this.mapJS = getMapJS(artists); // note this removes nulls values from artists
+        this.mapJS = mkMapJS(artists); // note this removes nulls values from artists
+        this.playlistEmbed = mkPlaylistEmbed(playlistLink);
     }
 
     /** produces the relevant Javascript for use in the .jsp file **/
-    private static String getMapJS(HashMap<String, String> artists) {
+    private static String mkMapJS(HashMap<String, String> artists) {
         final String MIN_COLOUR = "#8B8CFC";
         final String MAX_COLOUR = "#171AFD";
+        final String BG_COLOUR = "#a2e0fc";
+        final String DEFAULT_COLOUR = "#dedede";
 
         removeNullValues(artists);
 
@@ -73,7 +81,12 @@ public class ReturnObject {
                 data.toString() +
                 "        ]);\n" +
                 "\n" +
-                "        var options = {minValue: 0,  colors: ['" + MIN_COLOUR + "', '" + MAX_COLOUR + "']};\n" +
+                "        var options = " +
+                    "{minValue: 0," +
+                    "colors: ['" + MIN_COLOUR + "', '" + MAX_COLOUR + "']," +
+                    "backgroundColor: '" + BG_COLOUR + "'," +
+                    "datalessRegionColor: '" + DEFAULT_COLOUR + "'," +
+                    "defaultColor: '" + DEFAULT_COLOUR + "',};" +
                 "\n" +
                 "        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));\n" +
                 "\n" +
@@ -100,6 +113,12 @@ public class ReturnObject {
     /** converts a country code into a country name **/
     private static String codeToName(String code) {
         return new Locale("", code).getDisplayCountry();
+    }
+
+    /** produces HTML to embed the user's playlist **/
+    private static String mkPlaylistEmbed(String url) {
+        final String id = GetPlaylistTracks.URLtoID(url);
+        return "<iframe src=\"https://open.spotify.com/embed/playlist/" + id + "\" width=\"300\" height=\"380\" frameborder=\"0\" allowtransparency=\"true\" allow=\"encrypted-media\"></iframe>";
     }
 
     /** generates and returns the successMessage string **/

@@ -26,6 +26,8 @@ public class Main {
     public enum SaveLoadMethod {BEANSTALK, LOCAL_HOST, TERMINAL}
     private static final SaveLoadMethod CHOSEN_METHOD = SaveLoadMethod.BEANSTALK; // unless testing, use BEANSTALK
 
+    /** the maximum number of artists allowed in a playlist **/
+    private static final int MAX_ARTISTS = 75;
 
     /** the cache of artists and their countries **/
     private static Cache cache = initialiseCache();
@@ -37,7 +39,7 @@ public class Main {
 
         String loadPath, savePath;
         if (CHOSEN_METHOD == SaveLoadMethod.LOCAL_HOST) {
-            loadPath = "http://localhost:8080/Cosmopolitune/testCache.txt";
+            loadPath = "http://localhost:8080/cosmopolitune/testCache.txt";
             savePath = "src/main/webapp/testCache.txt";
             return new Cache(CHOSEN_METHOD, loadPath, savePath);
         }
@@ -62,19 +64,21 @@ public class Main {
             SpotifyApi api = SpotifyAuth.getAPI();
             ArrayList<Track> tracks = GetPlaylistTracks.getTracks(api, playlistURL);
             HashMap<String, String> artists = GetArtists.getArtists(tracks);
-
+            if ((!playlistURL.contains(Model.modelID)) && (artists.size() > MAX_ARTISTS)) { // Cosmopolitune playlist can have as many as it wants.
+                throw new IllegalArgumentException("Maximum different artists allowed is " + MAX_ARTISTS + ", you have " + artists.size() + ".");
+            }
             addCountries(artists);
             Model.updateModel(artists, playlistURL);
             printHM(artists);
             cache.saveData();
 
-            returnObject.successful(artists); // sets values to return
+            returnObject.successful(artists, playlistURL); // sets values to return
+            MapServlet.returnedData = returnObject;
         } catch (Exception e) {
             e.printStackTrace();
             returnObject.unsuccessful(e.getMessage()); // sets values to return
+            MapServlet.returnedData = returnObject;
         }
-
-        MapServlet.returnedData = returnObject;
     }
 
     /** populates the artists hashmap with each artist's country **/

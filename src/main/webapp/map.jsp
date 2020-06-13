@@ -17,13 +17,18 @@
 <body>
 <%
 String successMessage = (String) request.getAttribute("successMessage");
+String playlistEmbed = (String) request.getAttribute("playlistEmbed");
 %>
 <center>
     <h1>
         <a href="http://lewis-forbes.us-east-2.elasticbeanstalk.com/cosmopolitune" style="color:inherit">Cosmopolitune</a>
     </h1>
+
     <h3>Here's your map:</h3>
-    <div id="regions_div" style="width: 900px; height: 500px;"></div>
+    <div id="regions_div" style="height: 380px; display:inline-block;"></div>
+    <div style="display:inline-block;"><% out.println(playlistEmbed); %></div>
+    <div style="display:inline-block"><br><br></div>
+
     <p><% out.println(successMessage); %></p>
     <br><br>
     <div>

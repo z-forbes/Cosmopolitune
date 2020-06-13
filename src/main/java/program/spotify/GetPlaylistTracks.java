@@ -22,7 +22,7 @@ public class GetPlaylistTracks {
     }
 
     /** extracts and returns a playlist ID from playlist URL **/
-    private static String URLtoID(String input) {
+    public static String URLtoID(String input) {
         final String before = "/playlist/";
         final String after = "?si=";
 

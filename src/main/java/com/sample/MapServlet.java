@@ -50,6 +50,7 @@ public class MapServlet extends HttpServlet {
 
         if (returnedData.getSuccess()) {
             req.setAttribute("mapJS", returnedData.getMapJS());
+            req.setAttribute("playlistEmbed", returnedData.getPlaylistEmbed());
             req.setAttribute("successMessage", returnedData.getSuccessMessage());
             RequestDispatcher view = req.getRequestDispatcher("map.jsp");
             reset();
@@ -76,8 +77,8 @@ public class MapServlet extends HttpServlet {
 
     /** changes the colour gradient on the given map javascript **/
     private static String updateColours(String originalJS) {
-        final String newMin = "#83ff73";
-        final String newMax = "#1eff00";
-        return originalJS.replaceAll("colors: .*};", "colors: ['" + newMin + "', '" + newMax + "']};");
+        final String newMin = "#ff9cc3";
+        final String newMax = "#ff267d";
+        return originalJS.replaceAll("colors: .*],", "colors: ['" + newMin + "', '" + newMax + "'],");
     }
 }

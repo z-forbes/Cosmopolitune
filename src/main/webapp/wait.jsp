@@ -16,6 +16,9 @@
     </script>
 </head>
 <body>
+<%
+String playlistEmbed = (String) request.getAttribute("playlistEmbed");
+%>
 <center>
     <h1>
         <a href="http://lewis-forbes.us-east-2.elasticbeanstalk.com/cosmopolitune" style="color:inherit">Cosmopolitune</a>
@@ -27,11 +30,11 @@
 
     <br><br>
 
-    <p>Check out this playlist, it contains at least one song from every country ever seen by Cosmopolitune</p>
+    <p>Check out this playlist, it contains at least one song from every country ever seen by Cosmopolitune.</p>
     <p>Find an artist from a new country and it'll be added here!</p>
 
     <div style="display:inline-block;">
-        <iframe src="https://open.spotify.com/embed/playlist/0PJ5WPdsEfvJkxdQEenKFF" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <% out.println(playlistEmbed); %>
     </div>
     <div style="display:inline-block"><br><br></div>
     <div id="regions_div" style="height: 380px; display:inline-block;"></div>
