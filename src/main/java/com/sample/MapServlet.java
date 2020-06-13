@@ -28,6 +28,7 @@ public class MapServlet extends HttpServlet {
         link = "https://open.spotify.com/playlist/0PJ5WPdsEfvJkxdQEenKFF"; // link to the Cosmopolitune playlist
         Main.main();
         req.setAttribute("mapJS", updateColours(returnedData.getMapJS()));
+        req.setAttribute("playlistEmbed", updateColours(returnedData.getPlaylistEmbed()));
 
         link = req.getParameter("link");
         returnedData = null;

@@ -241,6 +241,7 @@ Kerusu<.>[]
 Lifelike<.>FR
 Rob<.>FR
 GBOYSWAG<.>[]
+Daði Freyr<.>DE
 Lil Mosey<.>US
 Young M.A<.>US
 Secret<.>KR
@@ -492,6 +493,7 @@ Usher<.>US
 Against All Logic<.>US
 Jestofunk<.>IT
 Quantic<.>CO
+Gregory Porter<.>US
 Porta<.>ES
 Aged In Harmony<.>[]
 The Phenomenal Handclap Band<.>US
@@ -696,6 +698,7 @@ T.I.<.>US
 The Beatles<.>GB
 Breakbot<.>FR
 Tim Atlas<.>US
+Sebastian Yatra<.>[]
 NAV<.>CA
 G-Eazy<.>US
 Martin Solveig<.>FR
@@ -945,6 +948,7 @@ George Sandler<.>[]
 Ze Spirits Band<.>[]
 NLE Choppa<.>US
 Eric Chou<.>[]
+Ricky Martin<.>PR
 Split Decision Band<.>US
 X-COAST<.>[]
 Eric B. & Rakim<.>US
