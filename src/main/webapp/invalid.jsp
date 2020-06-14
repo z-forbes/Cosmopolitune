@@ -29,12 +29,12 @@ String errorMessage = (String) request.getAttribute("errorMessage");
         <div>
             <br>
             <input type="submit" value="Make Map">
-            <p style="color: red; font-style: italic; font-size:90%; "><% out.println(errorMessage); %></p>
+            <p style="color: red; font-style: italic; font-size:90%;"><% out.println(errorMessage); %></p>
             <p style="font-size:90%; "><br></p>
         </div>
     </form>
     <div>
-        <p>The Cosmopolitune playlist contains songs covering every country it's come across.</p>
+        <p>The Cosmopolitune playlist contains songs covering every country seen by this app.</p>
         <iframe src="https://open.spotify.com/embed/playlist/0PJ5WPdsEfvJkxdQEenKFF" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe><br>
 
         <form name="submitForm" method="POST" action="map">

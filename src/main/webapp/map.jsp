@@ -13,6 +13,18 @@
         out.println(mapJS);
         %>
     </script>
+    <style>
+        @media only screen and (max-width: 1000px) {
+            #regions_div {
+                width:99%;
+            }
+        }
+        @media only screen and (min-width: 1001px) {
+            #regions_div {
+                height: 380px;
+            }
+        }
+    </style>
 </head>
 <body>
 <%
@@ -25,12 +37,12 @@ String playlistEmbed = (String) request.getAttribute("playlistEmbed");
     </h1>
 
     <h3>Here's your map:</h3>
-    <div id="regions_div" style="height: 380px; display:inline-block;"></div>
+    <div id="regions_div" style="display:inline-block;"></div>
     <div style="display:inline-block;"><% out.println(playlistEmbed); %></div>
     <div style="display:inline-block"><br><br></div>
 
     <p><% out.println(successMessage); %></p>
-    <br><br>
+    <br>
     <h3><a href="index.html">Make Another!</a></h3>
     <br><br>
     <div>

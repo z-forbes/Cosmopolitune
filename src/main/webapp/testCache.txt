@@ -1,10 +1,12 @@
 Document One<.>GB
 KETTAMA<.>IE
+Neha Kakkar<.>IN
 HONNE<.>GB
 FTISLAND<.>KR
 JKriv<.>US
 Nina Simone<.>US
 The Allergies<.>[]
+Varun Dhawan<.>IN
 Owl Eyes<.>AU
 Ferreck Dawn<.>[]
 Carpenters<.>US
@@ -18,6 +20,7 @@ Teen Top<.>KR
 Jorja Smith<.>GB
 Archie James Cavanaugh<.>[]
 Jordan Astra<.>[]
+Arcangel<.>[]
 Bèo Dạt Mây Trôi<.>[]
 Bohannon<.>[]
 Yemi Alade<.>NG
@@ -44,6 +47,7 @@ Eko Roosevelt<.>[]
 Nayer<.>US
 42 Dugg<.>[]
 Sheitan Brothers<.>[]
+Daddy Yankee<.>PR
 Mansionair<.>AU
 Vampire Weekend<.>US
 KOKOROKO<.>GB
@@ -52,6 +56,7 @@ Pete Heller's Big Love<.>[]
 Kosine<.>[]
 Childish Gambino<.>US
 Friend Within<.>GB
+Rich Brian<.>ID
 Ringzy<.>[]
 Delphi<.>[]
 Patchworks<.>[]
@@ -188,6 +193,7 @@ Marvin Gaye<.>US
 Sebb Junior<.>[]
 Ibibio Sound Machine<.>GB
 Bee's Knees<.>[]
+Joji<.>US
 Tony Allen<.>NG
 Yasmin<.>GB
 Kid Rock<.>US
@@ -242,6 +248,7 @@ Lifelike<.>FR
 Rob<.>FR
 GBOYSWAG<.>[]
 Daði Freyr<.>DE
+Piso 21<.>CO
 Lil Mosey<.>US
 Young M.A<.>US
 Secret<.>KR
@@ -357,6 +364,7 @@ Tierra Whack<.>US
 Zombies In Miami<.>MX
 DaBaby<.>US
 J. Cole<.>US
+Sech<.>PA
 Modest Mussorgsky<.>[]
 Lauer<.>DE
 Lord Echo<.>NZ
@@ -465,6 +473,7 @@ Sister Sledge<.>US
 Black Violin<.>US
 Ceri Evans<.>GB
 Antonia Thomas<.>GB
+Imanbek<.>KZ
 Scissor Sisters<.>US
 eevee<.>NL
 Jesse Bru<.>DE
@@ -523,6 +532,7 @@ Queen<.>GB
 Del Amitri<.>GB
 J Balvin<.>CO
 Skream<.>GB
+Justin Quiles<.>PR
 Karriem<.>[]
 Petit Biscuit<.>FR
 Vicetone<.>NL
@@ -574,6 +584,7 @@ Shirley Chen<.>[]
 Le Youth<.>US
 Toy王奕<.>[]
 Seinabo Sey<.>SE
+Dímelo Flow<.>PA
 Far East Movement<.>US
 Avicii<.>SE
 Adam Stacks<.>[]
@@ -596,6 +607,7 @@ Gold Fields<.>AU
 Arnold Bax<.>[]
 Orchestre Symphonique de Montréal<.>CA
 DP龍豬<.>[]
+Badshah<.>[]
 Vic Mensa<.>US
 ABBA<.>SE
 James Mason<.>US
@@ -734,6 +746,7 @@ Lovers<.>US
 Olivia Louise<.>[]
 Storken<.>[]
 George Benson<.>US
+Lyanno<.>PR
 Carly Simon<.>US
 Kali Uchis<.>US
 Edmony Krater<.>[]
@@ -785,6 +798,7 @@ Jason Zhang<.>[]
 Byron the Aquarius<.>[]
 The Mighty Ryeders<.>[]
 Lungile Masitha<.>ZA
+El Alfa<.>DO
 Blended Babies<.>[]
 a-ha<.>[]
 Wale<.>US
@@ -1083,6 +1097,7 @@ Jidenna<.>US
 Change<.>IT
 King Krule<.>GB
 The Vision<.>[]
+Jerry Di<.>VE
 Jex Opolis<.>US
 Koji Ono<.>[]
 UGK<.>[]

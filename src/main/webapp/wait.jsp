@@ -14,6 +14,13 @@
         out.println(mapJS);
         %>
     </script>
+    <style>
+        @media only screen and (min-width: 1001px) {
+            #mobile_message {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
 <%
@@ -27,6 +34,7 @@ String playlistEmbed = (String) request.getAttribute("playlistEmbed");
     <h2>While you wait...</h2>
     <h3>You'll have to wait around two seconds for every artist in your playlist that Cosmopolitune's never seen before.</h3>
     <h3>Once your map is ready, you'll be automatically redirected.</h3>
+    <p id="mobile_message" style="color: red; font-style: italic; font-size:90%;">This page usually doesn't load on mobile. Use desktop!</p>
 
     <br><br>
 
