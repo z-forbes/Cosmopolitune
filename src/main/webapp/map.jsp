@@ -31,6 +31,8 @@ String playlistEmbed = (String) request.getAttribute("playlistEmbed");
 
     <p><% out.println(successMessage); %></p>
     <br><br>
+    <h3><a href="index.html">Make Another!</a></h3>
+    <br><br>
     <div>
     <p>Made by <a href="https://lewisforbes.com/">Lewis Forbes</a></p>
     <p>Code available on <a href="https://github.com/lewisforbes/Cosmopolitune">GitHub</a></p>

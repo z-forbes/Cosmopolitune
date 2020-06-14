@@ -36,6 +36,9 @@ String playlistEmbed = (String) request.getAttribute("playlistEmbed");
     <div style="display:inline-block;"><% out.println(playlistEmbed); %></div>
     <div style="display:inline-block"><br><br></div>
     <div id="regions_div" style="height: 380px; display:inline-block;"></div>
+
+    <br><br>
+    <p>Still bored? Check out the list of artists seen and their countries <a href="https://elasticbeanstalk-us-east-2-128224929684.s3.us-east-2.amazonaws.com/cache/cache.txt" target="_blank">here</a>.</p>
     <br><br><br>
     <div>
         <p>Made by <a href="https://lewisforbes.com/">Lewis Forbes</a></p>

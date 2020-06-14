@@ -24,7 +24,7 @@ String errorMessage = (String) request.getAttribute("errorMessage");
         <br>
         <div>
             <label for="link">Enter a link to a Spotify playlist:</label><br><br>
-            <input type="text" id="link" name="link" placeholder="Make sure it's public" size="30">
+            <input type="text" id="link" name="link" placeholder="Make sure it's public" size="30" required>
         </div>
         <div>
             <br>

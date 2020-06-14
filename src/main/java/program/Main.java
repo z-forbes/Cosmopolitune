@@ -27,7 +27,7 @@ public class Main {
     private static final SaveLoadMethod CHOSEN_METHOD = SaveLoadMethod.BEANSTALK; // unless testing, use BEANSTALK
 
     /** the maximum number of artists allowed in a playlist **/
-    private static final int MAX_ARTISTS = 75;
+    private static final int MAX_ARTISTS = 100;
 
     /** the cache of artists and their countries **/
     private static Cache cache = initialiseCache();
