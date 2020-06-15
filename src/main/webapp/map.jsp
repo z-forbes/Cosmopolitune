@@ -30,6 +30,7 @@
 <%
 String successMessage = (String) request.getAttribute("successMessage");
 String playlistEmbed = (String) request.getAttribute("playlistEmbed");
+String newCountriesMessage = (String) request.getAttribute("newCountriesMessage");
 %>
 <center>
     <h1>
@@ -37,6 +38,7 @@ String playlistEmbed = (String) request.getAttribute("playlistEmbed");
     </h1>
 
     <h3>Here's your map:</h3>
+    <p><% out.println(newCountriesMessage); %></p>
     <div id="regions_div" style="display:inline-block;"></div>
     <div style="display:inline-block;"><% out.println(playlistEmbed); %></div>
     <div style="display:inline-block"><br><br></div>

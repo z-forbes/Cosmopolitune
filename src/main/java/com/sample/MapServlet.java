@@ -53,6 +53,7 @@ public class MapServlet extends HttpServlet {
             req.setAttribute("mapJS", returnedData.getMapJS());
             req.setAttribute("playlistEmbed", returnedData.getPlaylistEmbed());
             req.setAttribute("successMessage", returnedData.getSuccessMessage());
+            req.setAttribute("newCountriesMessage", returnedData.getNewCountriesMessage());
             RequestDispatcher view = req.getRequestDispatcher("map.jsp");
             reset();
             view.forward(req,resp);

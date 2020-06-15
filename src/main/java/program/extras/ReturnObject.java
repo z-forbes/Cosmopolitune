@@ -25,6 +25,9 @@ public class ReturnObject {
     /** HTML to embed the user's playlist **/
     private String playlistEmbed;
     public String getPlaylistEmbed() { return playlistEmbed; }
+    /** the message to show to the user telling them of new countries they found **/
+    private String newCountriesMessage;
+    public String getNewCountriesMessage() { return newCountriesMessage; }
 
     /* UNSUCCESSFUL GENERATION **/
     /** the message to be shown in the case of an error **/
@@ -37,11 +40,12 @@ public class ReturnObject {
 
 
     /** assigns values if program is successful **/
-    public void successful(HashMap<String, String> artists, String playlistLink) {
+    public void successful(HashMap<String, String> artists, String playlistLink, String newCountriesMessage) {
         this.success = true;
         this.successMessage = getSuccessMessage(artists);
         this.mapJS = mkMapJS(artists); // note this removes nulls values from artists
         this.playlistEmbed = mkPlaylistEmbed(playlistLink);
+        this.newCountriesMessage = newCountriesMessage;
     }
 
     /** produces the relevant Javascript for use in the .jsp file **/
@@ -111,7 +115,7 @@ public class ReturnObject {
     }
 
     /** converts a country code into a country name **/
-    private static String codeToName(String code) {
+    public static String codeToName(String code) {
         return new Locale("", code).getDisplayCountry();
     }
 

@@ -34,7 +34,7 @@ String playlistEmbed = (String) request.getAttribute("playlistEmbed");
     <h2>While you wait...</h2>
     <h3>You'll have to wait around two seconds for every artist in your playlist that Cosmopolitune's never seen before.</h3>
     <h3>Once your map is ready, you'll be automatically redirected.</h3>
-    <p id="mobile_message" style="color: red; font-style: italic; font-size:90%;">This page usually doesn't load on mobile. Use desktop!</p>
+    <p id="mobile_message" style="color: red; font-style: italic; font-size:90%;">This page usually doesn't fully load on mobile. Use desktop!</p>
 
     <br><br>
 
@@ -45,10 +45,8 @@ String playlistEmbed = (String) request.getAttribute("playlistEmbed");
     <div style="display:inline-block"><br><br></div>
     <div id="regions_div" style="height: 380px; display:inline-block;"></div>
 
-    <br><br>
-    <p>Still bored? Check out the list of artists seen and their countries <a href="https://elasticbeanstalk-us-east-2-128224929684.s3.us-east-2.amazonaws.com/cache/cache.txt" target="_blank">here</a>.</p>
-    <br><br><br>
     <div>
+        <br><br><br>
         <p>Made by <a href="https://lewisforbes.com/">Lewis Forbes</a></p>
         <p>Code available on <a href="https://github.com/lewisforbes/Cosmopolitune">GitHub</a></p>
     </div>

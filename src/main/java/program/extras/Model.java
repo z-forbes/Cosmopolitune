@@ -21,15 +21,16 @@ public class Model {
     /** data from the model playlist **/
     public static HashMap<String, String> modelArtists;
 
-    /** updates the model playlist if applicable **/
-    public static void updateModel(HashMap<String, String> artists, String url) {
+    /** updates the model playlist if applicable. Returns message detailing new countries found **/
+    public static String updateModel(HashMap<String, String> artists, String url) {
         if (url.contains(modelID)) {
             modelArtists = artists;
-            return;
+            return "";
         }
 
         ArrayList<String> newArtists = new ArrayList<>();
         String newCountry;
+        ArrayList<String> newCountries = new ArrayList<>();
         for (String artist : artists.keySet()) {
             newCountry = artists.get(artist);
             if (newCountry == null) { continue; }
@@ -38,10 +39,12 @@ public class Model {
                 System.out.println("New country: " + newCountry);
                 newArtists.add(artist);
                 modelArtists.put(artist, newCountry);
+                newCountries.add(ReturnObject.codeToName(newCountry));
             }
         }
 
         addNewArtists(newArtists);
+        return mkAddedMessage(newCountries);
     }
 
     /** adds new artists' songs to the playlist and updates its description **/
@@ -56,7 +59,7 @@ public class Model {
             currentArtist = getArtist(artist, api);
             currentTrack = getTopTrack(currentArtist, api);
             addToPlaylist(currentTrack, modelID, api);
-            final String newDesc = modelArtists.size() + " countries and counting! Find how diverse your playlists are via lewisforbes.com.";
+            final String newDesc = modelArtists.size() + " countries and counting! Find how diverse your playlists are at bit.ly/cosmopolitune.";
             updateDescription(newDesc, modelID, api);
             System.out.println("Added " + currentTrack.getName() + " to Cosmopolitune playlist.");
         }
@@ -115,4 +118,20 @@ public class Model {
         }
     }
 
+    /** makes a messaging telling the user that they found new countries **/
+    private static String mkAddedMessage(ArrayList<String> newCountries) {
+        if (newCountries.size() == 0) { return ""; }
+
+        String message = "You were the first person to find ";
+        if (newCountries.size() == 1) {
+            return message + "a song from " + newCountries.get(0) + "!";
+        }
+
+        StringBuilder countryList = new StringBuilder(newCountries.get(0));
+        for (int i=1; i<newCountries.size()-1; i++) {
+            countryList.append(", ").append(newCountries.get(i));
+        }
+        countryList.append(" and ").append(newCountries.get(newCountries.size()-1));
+        return message + "songs from " + countryList.toString() + "!";
+    }
 }

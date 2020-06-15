@@ -66,7 +66,7 @@ public class GetLocation {
             return factory.newDocumentBuilder().parse(new URL(url).openStream());
         } catch (Exception e) {
             e.printStackTrace();
-            throw new IllegalArgumentException("\nWas unable to load xml file from: " + url);
+            throw new IllegalArgumentException("The database was overwhelmed. Please try again.");
         }
     }
 

@@ -24,10 +24,10 @@ public class Main {
 
     /** the different methods for saving and loading the cache **/
     public enum SaveLoadMethod {BEANSTALK, LOCAL_HOST, TERMINAL}
-    private static final SaveLoadMethod CHOSEN_METHOD = SaveLoadMethod.LOCAL_HOST; // unless testing, use BEANSTALK
+    private static final SaveLoadMethod CHOSEN_METHOD = SaveLoadMethod.BEANSTALK; // unless testing, use BEANSTALK
 
     /** the maximum number of artists allowed in a playlist **/
-    private static final int MAX_ARTISTS = 100;
+    private static final int MAX_ARTISTS = 150;
 
     /** the cache of artists and their countries **/
     private static Cache cache = initialiseCache();
@@ -53,6 +53,13 @@ public class Main {
         throw new IllegalArgumentException("Invalid save/load method attempted: " + CHOSEN_METHOD.name());
     }
 
+    public static void main(String[] args) {
+        final String playlistURL = "https://open.spotify.com/playlist/4KUehPRtELUWsYaS2tJN0k?si=gk8YhP-tQtWaRxB9lHZ2Pg";
+        SpotifyApi api = SpotifyAuth.getAPI();
+        ArrayList<Track> tracks = GetPlaylistTracks.getTracks(api, playlistURL);
+        System.out.println(tracks.size());
+    }
+
     /** the main method for the entire program **/
     public static void main() {
         String playlistURL = MapServlet.link;
@@ -68,13 +75,14 @@ public class Main {
                 throw new IllegalArgumentException("Maximum different artists allowed is " + MAX_ARTISTS + ", you have " + artists.size() + ".");
             }
             addCountries(artists);
-            Model.updateModel(artists, playlistURL);
+            String newCountriesMessage = Model.updateModel(artists, playlistURL);
             printHM(artists);
             cache.saveData();
 
-            returnObject.successful(artists, playlistURL); // sets values to return
+            returnObject.successful(artists, playlistURL, newCountriesMessage); // sets values to return
             MapServlet.returnedData = returnObject;
         } catch (Exception e) {
+            cache.saveData();
             e.printStackTrace();
             returnObject.unsuccessful(e.getMessage()); // sets values to return
             MapServlet.returnedData = returnObject;
