@@ -20,7 +20,7 @@ String errorMessage = (String) request.getAttribute("errorMessage");
         See how diverse your playlists are!
     </h3>
 
-    <form method="post" action="map" autocomplete="off">
+    <form method="post" action="playlist-map" autocomplete="off">
         <br>
         <div>
             <label for="link">Enter a link to a Spotify playlist:</label><br><br>
@@ -29,15 +29,19 @@ String errorMessage = (String) request.getAttribute("errorMessage");
         <div>
             <br>
             <input type="submit" value="Make Map">
-            <p style="color: red; font-style: italic; font-size:90%;"><% out.println(errorMessage); %></p>
             <p style="font-size:90%; "><br></p>
         </div>
     </form>
+    <form method="post" action="user-map">
+        <p>Or make maps based on your library:</p>
+        <input type="submit" value="Make Maps">
+    </form>
+    <br><br>
     <div>
         <p>The Cosmopolitune playlist contains songs covering every country seen by this app.</p>
         <iframe src="https://open.spotify.com/embed/playlist/0PJ5WPdsEfvJkxdQEenKFF" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe><br>
 
-        <form name="submitForm" method="POST" action="map">
+        <form name="submitForm" method="POST" action="playlist-map">
             <input type="hidden" name="link" value="https://open.spotify.com/playlist/0PJ5WPdsEfvJkxdQEenKFF">
             <a href="javascript:document.submitForm.submit()">See its map</a>
         </form>

@@ -2,15 +2,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <%
+    String mapJS = (String) request.getAttribute("playlistMapJS");
+    String redirect = (String) request.getAttribute("redirect");
+    String content = "0; url=" + redirect;
+    %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
     <title>Cosmopolitune</title>
-    <meta http-equiv="Refresh" content="0; url=/cosmopolitune/map" />
+    <meta http-equiv="Refresh" content="<%=content %>" />
 
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
         <%
-        String mapJS = (String) request.getAttribute("mapJS");
         out.println(mapJS);
         %>
     </script>

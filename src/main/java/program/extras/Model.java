@@ -10,7 +10,7 @@ import com.wrapper.spotify.requests.data.artists.GetArtistsTopTracksRequest;
 import com.wrapper.spotify.requests.data.playlists.AddItemsToPlaylistRequest;
 import com.wrapper.spotify.requests.data.playlists.ChangePlaylistsDetailsRequest;
 import com.wrapper.spotify.requests.data.search.simplified.SearchArtistsRequest;
-import program.spotify.SpotifyAuth;
+import program.playlist.SpotifyPlaylistAuth;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -23,7 +23,7 @@ public class Model {
 
     /** updates the model playlist if applicable. Returns message detailing new countries found **/
     public static String updateModel(HashMap<String, String> artists, String url) {
-        if (url.contains(modelID)) {
+        if (url.contains(modelID)) { // note that url = "" for program.user request
             modelArtists = artists;
             return "";
         }
@@ -52,7 +52,7 @@ public class Model {
         if (newArtists.size() == 0) {
             return;
         }
-        SpotifyApi api = SpotifyAuth.getAPI();
+        SpotifyApi api = SpotifyPlaylistAuth.getAPI();
         Artist currentArtist;
         Track currentTrack;
         for (String artist : newArtists) {
@@ -118,7 +118,7 @@ public class Model {
         }
     }
 
-    /** makes a messaging telling the user that they found new countries **/
+    /** makes a messaging telling the program.user that they found new countries **/
     private static String mkAddedMessage(ArrayList<String> newCountries) {
         if (newCountries.size() == 0) { return ""; }
 
