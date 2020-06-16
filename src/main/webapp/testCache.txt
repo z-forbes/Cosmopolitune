@@ -19,12 +19,15 @@ Carpenters<.>US
 Avicii<.>SE
 Kaskade<.>US
 Emmanuel Jal<.>SS
+Käptn Peng<.>DE
 Phairo<.>[]
 Myd<.>FR
+Ayax y Prok<.>ES
 Atlanta Symphony Orchestra<.>US
 Chase & Status<.>GB
 Moonchild Sanelly<.>ZA
 Roy Ayers Ubiquity<.>US
+fragile.<.>[]
 Teen Top<.>KR
 CHIC<.>US
 Jorja Smith<.>GB
@@ -49,8 +52,10 @@ Bispo<.>PT
 Jean Tonique<.>FR
 Badshah<.>[]
 Crazy P<.>GB
+love-sadKID<.>[]
 Turquoise Summers<.>[]
 ABBA<.>SE
+Frith<.>[]
 Bacao Rhythm & Steel Band<.>DE
 Esperanza Spalding<.>US
 Valentina Pappalardo<.>[]
@@ -77,6 +82,7 @@ Reelsoul<.>[]
 Pete Heller's Big Love<.>[]
 Kosine<.>[]
 Nevada<.>SE
+Bone Slim<.>[]
 Childish Gambino<.>US
 88rising<.>US
 Friend Within<.>GB
@@ -105,6 +111,7 @@ Cho and Random Impetus<.>[]
 BluePrint<.>US
 Skee-Lo<.>US
 Gold Ag<.>[]
+Bob Dylan<.>US
 Clean Bandit<.>GB
 Loyle Carner<.>GB
 Andreya Triana<.>GB
@@ -122,9 +129,11 @@ Boncana Maïga<.>ML
 Jamie N Commons<.>GB
 Hugo Bladel<.>[]
 Big Shaq<.>GB
+oofoe<.>[]
 Fela Kuti<.>NG
 SuperParka<.>[]
 The Killers<.>US
+Hard GZ<.>[]
 Mount Liberation Unlimited<.>[]
 Panic! At The Disco<.>US
 Christian S<.>[]
@@ -148,17 +157,20 @@ B-ahwe<.>[]
 London Symphony Orchestra [Artist]<.>[]
 Margo Williams<.>[]
 Nicola Cruz<.>EC
+Kxrn<.>[]
 Crackazat<.>[]
 Sheff G<.>US
 Ross from Friends<.>GB
 Lionel Loueke<.>BJ
 Victor Démé<.>BF
 Jon Schmidt<.>US
+alt-J<.>GB
 Crystal Waters<.>US
 Gorillaz<.>GB
 Cristina Violle<.>[]
 Aretha Franklin<.>US
 Plustwo<.>IT
+Sceno<.>ES
 Peak & Swift<.>[]
 Palms Trax<.>[]
 Block B<.>KR
@@ -176,19 +188,24 @@ Mat.Joe<.>DE
 Alexandra Stan<.>RO
 Netta<.>IL
 Tilman<.>DE
+Akila<.>[]
 GoGo Penguin<.>GB
+Melody Gardot<.>US
 Rogerseventytwo<.>[]
 Franck Biyong<.>CM
 Loods<.>GB
 A-Trak<.>CA
+Tee Amara<.>ES
 Jonas Blue<.>GB
 Azymuth<.>BR
 Everything Everything<.>GB
 Ana Tijoux<.>CL
 KALEO<.>IS
 Sigala<.>GB
+Nion<.>NL
 Fatboy Slim<.>GB
 SUPER JUNIOR<.>KR
+Dennis Lloyd<.>IL
 Kanye West<.>US
 Nick Murphy<.>AU
 Superpoze<.>FR
@@ -235,16 +252,20 @@ edbl<.>[]
 T La Rock<.>US
 Popcaan<.>JM
 Swedish House Mafia<.>SE
+Bizarrap<.>AR
 John Martin<.>[]
 Jan Bang<.>NO
+Mac Wetha<.>[]
 DJ Blyatman<.>SK
 Kasabian<.>GB
+Harrison Sands<.>US
 Al Dobson Jr.<.>GB
 Joe Smooth<.>US
 Agents Of Time<.>[]
 Kelvin Jones<.>GB
 Alan Gilbert<.>US
 Leon Ware<.>US
+Mahalia<.>US
 Fleetwood Mac<.>GB
 David Walters<.>FR
 Massimiliano Pagliara<.>IT
@@ -290,6 +311,7 @@ Tony Allen<.>NG
 Yasmin<.>GB
 Kid Rock<.>US
 Pasteur Lappe<.>[]
+SacrificioyPasta<.>[]
 William & The Young Five<.>[]
 Atmosfear<.>GB
 Lovers<.>US
@@ -297,6 +319,7 @@ Olivia Louise<.>[]
 Sam Cooke<.>US
 Bran Mazz<.>[]
 Bonobo<.>GB
+Copper King<.>US
 Nathan Haines<.>NZ
 Black Caviar<.>[]
 Candi Staton<.>US
@@ -312,6 +335,7 @@ Robert Spano<.>US
 My Chemical Romance<.>US
 Tame Impala<.>AU
 Skepta<.>GB
+Biig Piig<.>GB
 THE SCOTTS<.>US
 K-Maxx<.>[]
 Roy Ayers<.>US
@@ -331,9 +355,11 @@ Jessie Reyez<.>CA
 Buddy<.>[]
 Dr. Lonnie Smith<.>US
 Arctic Monkeys<.>GB
+Manwolves<.>US
 Indeep<.>US
 B.A.P<.>KR
 Nice & Smooth<.>US
+Gus Dapperton<.>US
 Galaxy<.>[]
 Benedek<.>US
 Lawrence Rothman<.>[]
@@ -407,17 +433,20 @@ Raw Silk<.>US
 Paolo Nutini<.>GB
 Tobias Bernstrup<.>[]
 SHINee<.>KR
+Dingus.<.>[]
 Christopher<.>[]
 T-ara<.>KR
 Aziza Brahim<.>EH
 Folamour<.>FR
 Om Alec Khaoli<.>[]
 Logg<.>US
+Dahm.<.>[]
 Lost Frequencies<.>BE
 Nilüfer Yanya<.>GB
 Ralph Tresvant<.>US
 Di Melo<.>[]
 Dimitri Yerasimos<.>FR
+Elton Aura<.>US
 Esese<.>[]
 Bibi Bourelly<.>DE
 CHANEY<.>GB
@@ -448,11 +477,13 @@ Alex Virgo<.>[]
 Bee Gees<.>GB
 Sandy Barber<.>[]
 Kenichiro Nishihara<.>JP
+Jaeden Camstra<.>[]
 DJ Khaled<.>US
 Mumford & Sons<.>GB
 TOTO<.>US
 Sleepy Hallow<.>[]
 ANII<.>[]
+Mikey Swamp<.>[]
 Eva Ayllón<.>PE
 Gnarls Barkley<.>US
 Tyga<.>US
@@ -463,6 +494,7 @@ Ezhel<.>TR
 Jackson Sisters<.>US
 Yeah Yeah Yeahs<.>US
 Adana Twins<.>DE
+glue70<.>[]
 Swizz Beatz<.>US
 Taron Egerton<.>GB
 Ty.<.>[]
@@ -498,6 +530,7 @@ The Mouse Outfit<.>GB
 New Order<.>GB
 Dimitri From Paris<.>FR
 Mella Dee<.>[]
+Kinder Malo<.>ES
 Milky Chance<.>DE
 21 Savage<.>US
 Mary Clark<.>[]
@@ -515,11 +548,13 @@ Gym Class Heroes<.>US
 Sebu<.>[]
 Richie Havens<.>US
 Janelle MonÃ¡e<.>US
+OE Beats<.>[]
 J.I the Prince of N.Y<.>[]
 Uptown Funk Empire<.>[]
 Daniel Dimbas<.>[]
 Gopnik McBlyat<.>PL
 Still Woozy<.>[]
+Acid Pauli<.>DE
 Detroit Swindle<.>[]
 Maroon 5<.>US
 Amanaz<.>ZM
@@ -545,11 +580,14 @@ Alex Metric<.>GB
 Marlena Shaw<.>US
 AnnenMayKantereit<.>DE
 Edouard Van Remoortel [Conductor]<.>[]
+Natos y Waor<.>ES
+fernandocosta<.>[]
 Aswad<.>GB
 Bakermat<.>NL
 Justin Bieber<.>CA
 Lucas Soto<.>[]
 Parcels<.>AU
+The Doors<.>US
 Gordie MacKeeman and His Rhythm Boys<.>CA
 Kevin Lyttle<.>VC
 Matias Bustillos<.>[]
@@ -560,6 +598,7 @@ Shazalakazoo<.>RS
 Zonderling<.>NL
 Monty Morris<.>[]
 Demi Riquísimo<.>[]
+Hippo Campus<.>US
 The Juan Maclean<.>US
 Tomppabeats<.>[]
 Various Artists<.>[]
@@ -571,11 +610,16 @@ slenderbodies<.>US
 Big Miz<.>[]
 The Sistars<.>[]
 G.E.M.<.>HK
+Blasfem<.>[]
 Ecco2k<.>SE
+Ichisan<.>SI
+Easy Life<.>AU
+eery<.>[]
 Donald Byrd<.>US
 Nachtbraker<.>NL
 Mr Jukes<.>GB
 David Penn<.>ES
+Die Tentakel von Delphi<.>[]
 Kindness<.>GB
 Hassan Shakosh<.>EG
 Arve Henriksen<.>NO
@@ -585,6 +629,7 @@ Ludwig van Beethoven<.>DE
 Beyoncé<.>US
 Anita<.>[]
 Infinity Ink<.>GB
+Samsa<.>US
 DJ Lag<.>ZA
 Thomaz Krauze<.>[]
 Sunship<.>GB
@@ -598,11 +643,14 @@ essess<.>[]
 Meisterjaan<.>EE
 Neeme Järvi<.>EE
 The Pass<.>[]
+El M Beats<.>[]
 Toni Storaro<.>BG
 Delta Sleep<.>GB
 Junior Senior<.>DK
 Edward Elgar<.>GB
+Luv.Ly<.>[]
 Manuel Turizo<.>CO
+Hazhe<.>ES
 Vitas<.>[]
 L'Impératrice<.>FR
 Dave Koor<.>[]
@@ -653,6 +701,7 @@ Omar Apollo<.>[]
 Girls of the Internet<.>[]
 Skip Mahoney<.>[]
 Kyla<.>PH
+Kase.O<.>ES
 Two Door Cinema Club<.>GB
 Sam Smith<.>GB
 Justin Quiles<.>PR
@@ -668,15 +717,20 @@ The Manor<.>[]
 Bunny Mack<.>GB
 Novo Amor<.>GB
 James Brown<.>US
+Mochi<.>JP
 Charles Dutoit<.>CH
 North of Loreto<.>[]
+Abhi The Nomad<.>US
 Phil Fearon<.>GB
 Colin & Caroline<.>[]
 Peggy Gou<.>DE
 Elephant Sessions<.>[]
+halberd<.>[]
+YSKJamie<.>[]
 Zouk Machine<.>GP
 St. Paul & The Broken Bones<.>US
 Michael Kiwanuka<.>GB
+Lil GZ<.>[]
 Klangstof<.>NL
 Seramic<.>[]
 Antal<.>HU

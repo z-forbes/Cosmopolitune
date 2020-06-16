@@ -23,14 +23,13 @@ public class CountryFromPlace {
         if ((place == null) || isCode(place)) {
             return place;
         }
-
         if (isCountryName(place)) {
             return nameToCode(place);
         }
 
         String url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + place.replace(" ", "+") + "&key=" + API_KEY;
         String fullResponse = readWebpage(url);
-        if (fullResponse == null) {
+        if ((fullResponse == null) || (fullResponse.contains("\"status\" : \"ZERO_RESULTS\""))) {
             return null;
         }
         return codeFromResponse(fullResponse);
@@ -79,7 +78,7 @@ public class CountryFromPlace {
                 return responseArray[i-1];
             }
         }
-        throw new IllegalArgumentException("Was unable to find the target line in the response.");
+        throw new IllegalArgumentException("Was unable to find the target line in the response:\n" + fullResponse);
     }
 
     /** an list of all countries in upper case **/
