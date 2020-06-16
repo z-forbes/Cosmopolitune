@@ -69,6 +69,7 @@ public class UserServlet extends HttpServlet {
                 req.setAttribute("albumsSuccessMessage", returnedData.getAlbumsSuccessMessage());
                 req.setAttribute("tracksSuccessMessage", returnedData.getTracksSuccessMessage());
                 req.setAttribute("togetherSuccessMessage", returnedData.getTogetherSuccessMessage());
+                req.setAttribute("usedItemsStr", ("" + NewUserRequest.TO_GET));
                 String welcomeMessage = "Here're your maps:";
                 if (returnedData.getUserName() != null) {
                     welcomeMessage = "Here are the maps for " + returnedData.getUserName() + ":";

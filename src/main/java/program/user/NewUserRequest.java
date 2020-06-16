@@ -13,17 +13,27 @@ import java.util.ArrayList;
 
 import static program.playlist.NewPlaylistRequest.appendArtist;
 
+/**
+ * Created a Return Object for a request based on the user's library
+ */
+
 public class NewUserRequest {
+    /** the number of songs to get for each map **/
+    public static final int TO_GET = 50; // max is 50 due to API limitations
+
+
+    /** the main method for the class **/
     public static ReturnObject newRequest(String code) {
         SpotifyApi api = SpotifyUserAuth.getAPI(code);
         ArrayList<Artist> followedArtists = GetFollowedArtists.main(api);
         ArrayList<Album> savedAlbums = GetSavedAlbums.main(api);
         ArrayList<Track> savedTracks = GetSavedTracks.main(api);
+
         String userName = getUserName(api);
         return Main.userMain(artistsToArtistsNames(followedArtists), albumsToArtistsNames(savedAlbums), tracksToArtistsNames(savedTracks), userName);
     }
 
-    /** turn lists of different Spotify objects into lists of their artists **/
+    /** turn lists of different Spotify objects into lists of their artists; names **/
     private static ArrayList<String> artistsToArtistsNames(ArrayList<Artist> artists) {
         ArrayList<String> artistsNames = new ArrayList<String>();
         for (Artist artist : artists) {

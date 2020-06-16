@@ -1,11 +1,15 @@
 package program.playlist;
 
 import com.wrapper.spotify.SpotifyApi;
+import com.wrapper.spotify.model_objects.specification.Paging;
 import com.wrapper.spotify.model_objects.specification.Playlist;
 import com.wrapper.spotify.model_objects.specification.PlaylistTrack;
 import com.wrapper.spotify.model_objects.specification.Track;
 import com.wrapper.spotify.requests.data.playlists.GetPlaylistRequest;
+import com.wrapper.spotify.requests.data.playlists.GetPlaylistsItemsRequest;
+import program.extras.Model;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -16,10 +20,24 @@ import java.util.Arrays;
 public class GetPlaylistTracks {
 
     /** returns a list of tracks in a given playlist **/
-    public static ArrayList<Track> getTracks(String playlistURL) {
-        SpotifyApi api = SpotifyPlaylistAuth.getAPI();
-        Playlist playlist = getPlaylist(api, URLtoID(playlistURL));
-        return playlistToTracks(playlist);
+    public static ArrayList<Track> getTracks(String playlistURL, boolean getAll) {
+        final SpotifyApi api = SpotifyPlaylistAuth.getAPI();
+        final String id = URLtoID(playlistURL);
+
+        int offset = 0;
+        ArrayList<Track> currentRequest = parseRawData(getPlaylistTracks(api, id, offset));
+        if (!getAll) {
+            return currentRequest;
+        }
+        // iff getAll
+        ArrayList<Track> fullTracks = new ArrayList<>();
+        while (currentRequest.size()>0) {
+            fullTracks.addAll(currentRequest);
+
+            offset += 100;
+            currentRequest = parseRawData(getPlaylistTracks(api, id, offset));
+        }
+        return fullTracks;
     }
 
     /** extracts and returns a playlist ID from playlist URL **/
@@ -40,26 +58,20 @@ public class GetPlaylistTracks {
     }
 
     /** returns a playlist object from a given playlist ID **/
-    private static Playlist getPlaylist(SpotifyApi api, String id) {
-        GetPlaylistRequest getPlaylistRequest = api.getPlaylist(id).build();
+    private static Paging<PlaylistTrack> getPlaylistTracks(SpotifyApi api, String id, int offset) {
+        final GetPlaylistsItemsRequest getPlaylistsItemsRequest = api.getPlaylistsItems(id).offset(offset).build();
         try {
-            final Playlist playlist = getPlaylistRequest.execute();
-
-            System.out.println("Successfully received tracks from: " + playlist.getName() + "\n");
-            return playlist;
+            return getPlaylistsItemsRequest.execute();
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
         }
         throw new IllegalArgumentException("Was unable to get the tracks from the given playlist.");
     }
 
-    /** converts a playlist object to a list of its tracks **/
-    private static ArrayList<Track> playlistToTracks(Playlist playlist) {
-        ArrayList<PlaylistTrack> playlistTracks =
-                new ArrayList<PlaylistTrack>(Arrays.asList(playlist.getTracks().getItems()));
-
+    /** converts a the raw data into to a list of tracks **/
+    private static ArrayList<Track> parseRawData(Paging<PlaylistTrack> playlistTracks) {
         ArrayList<Track> output = new ArrayList<Track>();
-        for (PlaylistTrack plt : playlistTracks) {
+        for (PlaylistTrack plt : playlistTracks.getItems()) {
             output.add((Track) plt.getTrack());
         }
 

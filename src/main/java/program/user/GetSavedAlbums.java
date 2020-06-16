@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 public class GetSavedAlbums {
     /** the number of saves albums to get **/
-    private static final int toGet = 25; // max 50
+    private static final int toGet = NewUserRequest.TO_GET;
 
 
     /** returns a list of the program.user's saved albums **/

@@ -78,13 +78,17 @@ public class Main {
             HashMap<String, String> albumArtists = initialiseArtists(albumArtistsNames);
             HashMap<String, String> tracksArtists = initialiseArtists(tracksArtistsNames);
 
+
             addCountries(artistsArtists);
             addCountries(albumArtists);
             addCountries(tracksArtists);
 
+
             String newCountriesMessage = Model.updateModel(combineHashMaps(combineHashMaps(artistsArtists, albumArtists), tracksArtists), ""); // not great but works lol
             cache.saveData();
+
             returnObject.userSuccessful(artistsArtists, albumArtists, tracksArtists, newCountriesMessage, userName);
+
             return returnObject;
         } catch (Exception e) {
             cache.saveData();
@@ -102,7 +106,6 @@ public class Main {
                 artists.put(name, null);
             }
         }
-
 
         return artists;
     }
@@ -125,7 +128,7 @@ public class Main {
     }
 
     /** pretty prints a hashmap **/
-    private static void printHM(HashMap<String, String> input) {
+    public static void printHM(HashMap<String, String> input) {
         for (String key : input.keySet()) {
             System.out.print("Key: " + key + " | ");
             System.out.println("Value: " + input.get(key));

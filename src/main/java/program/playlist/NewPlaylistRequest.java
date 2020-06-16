@@ -3,6 +3,7 @@ package program.playlist;
 import com.wrapper.spotify.model_objects.specification.ArtistSimplified;
 import com.wrapper.spotify.model_objects.specification.Track;
 import program.Main;
+import program.extras.Model;
 import program.extras.ReturnObject;
 
 import java.util.ArrayList;
@@ -10,7 +11,7 @@ import java.util.ArrayList;
 public class NewPlaylistRequest {
     /** the main method used for making a new request for a playlist **/
     public static ReturnObject newRequest(String playlistURL) {
-        ArrayList<Track> tracks = GetPlaylistTracks.getTracks(playlistURL);
+        ArrayList<Track> tracks = GetPlaylistTracks.getTracks(playlistURL, playlistURL.contains(Model.modelID));
         ArrayList<String> artistsNames = artistsFromTracks(tracks);
         return Main.playlistMain(artistsNames, playlistURL);
     }

@@ -33,10 +33,16 @@ public class Cache {
 
     /** hashmap containing data from the cache **/
     private HashMap<String, String> artistsData = new HashMap<String, String>();
+    /** true if the data has been loaded, false otherwise **/
+    private boolean dataLoaded;
+    /** true if new data has been loaded, used to prevent unnecessary api calls **/
+    private boolean newData;
 
 
     /** constructor when local cache storage is used **/
     public Cache(Main.SaveLoadMethod chosenMethod, String loadPath, String savePath) {
+        this.dataLoaded = false;
+        this.newData = false;
         this.chosenMethod = chosenMethod;
         assert chosenMethod != Main.SaveLoadMethod.BEANSTALK;
         assert loadPath != null;
@@ -49,6 +55,8 @@ public class Cache {
 
     /** constructor when elastic beanstalk cache storage is used **/
     public Cache(Main.SaveLoadMethod chosenMethod) {
+        this.dataLoaded = false;
+        this.newData = false;
         this.chosenMethod = chosenMethod;
         assert chosenMethod != Main.SaveLoadMethod.BEANSTALK;
         loadData();
@@ -81,6 +89,8 @@ public class Cache {
                 assert splitLine.length == 2;
                 artistsData.put(splitLine[0], splitLine[1].equals(NULL_DATA) ? null : splitLine[1]);
             }
+            dataLoaded = true;
+
         } catch (Exception e) {
             e.printStackTrace();
             throw new IllegalArgumentException("Cache formatted incorrectly:\n" + loadedData);
@@ -121,8 +131,12 @@ public class Cache {
 
     /** saves data to the cache **/
     public void saveData() {
-        loadData(); // prevents deletion if data has not been loaded
-
+        assert dataLoaded;
+        if (!newData) {
+            System.out.println("No new data so cache not updated");
+            dataLoaded = false; // should not be saved before being loaded again
+            return;
+        }
         /* formats saved data */
         StringBuilder toSave = new StringBuilder();
         String currentCountry;
@@ -161,7 +175,8 @@ public class Cache {
         if (!saveSuccess) {
             throw new IllegalArgumentException("Was unable to save the cache.");
         }
-
+        dataLoaded = false; // should not be saved before being loaded again
+        newData = false;
     }
 
     /** queries the cache for a given artist's country. The NO_DATA string is returned if artist not found **/
@@ -172,5 +187,6 @@ public class Cache {
     /** adds/overwrites an artist and country pair **/
     public void addEntry(String artist, String country) {
         artistsData.put(artist, country);
+        newData = true;
     }
 }

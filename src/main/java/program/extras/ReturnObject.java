@@ -62,18 +62,17 @@ public class ReturnObject {
     public void playlistSuccessful(HashMap<String, String> playlistArtists, String playlistLink, String newCountriesMessage) {
         this.success = true;
         this.playlistSuccessMessage = getSuccessMessage(playlistArtists);
-        this.playlistMapJS = mkMapJS(playlistArtists); // note this removes nulls values from artists
         this.playlistEmbed = mkPlaylistEmbed(playlistLink);
         this.newCountriesMessage = newCountriesMessage;
+        this.playlistMapJS = mkMapJS(playlistArtists); // note this removes nulls values from artists
     }
 
     /** assigns values if program.user request is successful **/
     public void userSuccessful(HashMap<String, String> artistsArtists, HashMap<String, String> albumsArtists,
                                HashMap<String, String> tracksArtists, String newCountriesMessage, String userName) {
-        HashMap<String, String> artistsTogether = Main.combineHashMaps(Main.combineHashMaps(artistsArtists, albumsArtists), tracksArtists);
-        this.userMapsJS = mkMapsJS(artistsArtists, albumsArtists, tracksArtists, artistsTogether);
-
         this.success = true;
+        HashMap<String, String> artistsTogether = Main.combineHashMaps(Main.combineHashMaps(artistsArtists, albumsArtists), tracksArtists);
+
         this.artistsSuccessMessage = getSuccessMessage(artistsArtists);
         this.albumsSuccessMessage = getSuccessMessage(albumsArtists);
         this.tracksSuccessMessage = getSuccessMessage(tracksArtists);
@@ -81,6 +80,7 @@ public class ReturnObject {
 
         this.newCountriesMessage = newCountriesMessage;
         this.userName = userName;
+        this.userMapsJS = mkMapsJS(artistsArtists, albumsArtists, tracksArtists, artistsTogether); // this removes all nulls from all hashmaps
     }
 
     /** assigns values if the program is unsuccessful **/
@@ -128,7 +128,7 @@ public class ReturnObject {
         return output;
     }
 
-    /** produces the relevant Javascript for three maps **/
+    /** produces the relevant Javascript for three maps. CALL THIS LAST! NULLS REMOVED FROM HASHMAPS! **/
     private static String mkMapsJS(HashMap<String, String> artistsArtists, HashMap<String, String> albumsArtists, HashMap<String, String> tracksArtists, HashMap<String, String> artistsTogether) {
         final String API_KEY = Confidential.ReturnObject_API_KEY;
         final String MIN_COLOUR = "#8B8CFC";

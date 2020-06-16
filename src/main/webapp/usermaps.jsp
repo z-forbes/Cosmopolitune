@@ -39,6 +39,7 @@ String artistsSuccessMessage = (String) request.getAttribute("artistsSuccessMess
 String albumsSuccessMessage = (String) request.getAttribute("albumsSuccessMessage");
 String tracksSuccessMessage = (String) request.getAttribute("tracksSuccessMessage");
 String togetherSuccessMessage = (String) request.getAttribute("togetherSuccessMessage");
+String usedItems = (String) request.getAttribute("usedItemsStr");
 %>
 <center>
     <h1>
@@ -68,7 +69,7 @@ String togetherSuccessMessage = (String) request.getAttribute("togetherSuccessMe
     </div>
 
     <p><% out.println(newCountriesMessage); %></p>
-    <p>Currently, only the 25 most recent followed artists, saved albums and saved tracks are considered.</p>
+    <p>Currently, only the <% out.println(usedItems); %> most recent followed artists, saved albums and saved tracks are considered.</p>
     <br>
     <h3><a href="index.html">Make Another!</a></h3>
     <br><br>
