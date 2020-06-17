@@ -24,13 +24,19 @@ public class NewUserRequest {
 
     /** the main method for the class **/
     public static ReturnObject newRequest(String code) {
-        SpotifyApi api = SpotifyUserAuth.getAPI(code);
-        ArrayList<Artist> followedArtists = GetFollowedArtists.main(api);
-        ArrayList<Album> savedAlbums = GetSavedAlbums.main(api);
-        ArrayList<Track> savedTracks = GetSavedTracks.main(api);
+        try {
+            SpotifyApi api = SpotifyUserAuth.getAPI(code);
+            ArrayList<Artist> followedArtists = GetFollowedArtists.main(api);
+            ArrayList<Album> savedAlbums = GetSavedAlbums.main(api);
+            ArrayList<Track> savedTracks = GetSavedTracks.main(api);
 
-        String userName = getUserName(api);
-        return Main.userMain(artistsToArtistsNames(followedArtists), albumsToArtistsNames(savedAlbums), tracksToArtistsNames(savedTracks), userName);
+            String userName = getUserName(api);
+            return Main.userMain(artistsToArtistsNames(followedArtists), albumsToArtistsNames(savedAlbums), tracksToArtistsNames(savedTracks), userName);
+        } catch (Exception e) {
+            ReturnObject failed = new ReturnObject();
+            failed.unsuccessful("Error, please try again.");
+            return failed;
+        }
     }
 
     /** turn lists of different Spotify objects into lists of their artists; names **/
