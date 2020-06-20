@@ -48,7 +48,7 @@ String errorMessage = (String) request.getAttribute("errorMessage");
 
     </div>
     <br><br><br>
-    <h2 style="font-size:x-large">Hefty merci to:</h2><br>
+    <h2 style="font-size:x-large">Thanks to:</h2><br>
     <table style="text-align: center; width:400px;">
         <tr>
             <td><a href="https://github.com/thelinmichael/spotify-web-api-java">thelinmichael on Github</a><br><br></td>
