@@ -23,7 +23,7 @@ public class NewPlaylistRequest {
     }
 
     /** makes a list of all artists' names from a list of tracks **/
-    public static ArrayList<String> artistsFromTracks(ArrayList<Track> tracks) {
+    private static ArrayList<String> artistsFromTracks(ArrayList<Track> tracks) {
         ArrayList<String> artists = new ArrayList<String>();
         for (Track track : tracks) {
             if (track == null) {

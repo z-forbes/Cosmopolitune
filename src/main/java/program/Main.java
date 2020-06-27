@@ -127,13 +127,6 @@ public class Main {
         }
     }
 
-    /** pretty prints a hashmap **/
-    public static void printHM(HashMap<String, String> input) {
-        for (String key : input.keySet()) {
-            System.out.print("Key: " + key + " | ");
-            System.out.println("Value: " + input.get(key));
-        }
-    }
 
     /** combines three HashMaps, assuming all matching keys have the same values **/
     public static HashMap<String, String> combineHashMaps(HashMap<String, String> hm1, HashMap<String, String> hm2) {

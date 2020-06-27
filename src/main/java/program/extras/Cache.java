@@ -1,16 +1,17 @@
 package program.extras;
 
+import com.wrapper.spotify.model_objects.specification.Track;
 import program.Main;
+import program.playlist.GetPlaylistTracks;
+import program.playlist.NewPlaylistRequest;
 
 import java.io.File;
 import java.io.FileOutputStream;
-import java.io.FileWriter;
 import java.io.OutputStreamWriter;
 import java.net.URL;
-import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Locale;
 import java.util.Scanner;
 
 /**
@@ -188,5 +189,57 @@ public class Cache {
     public void addEntry(String artist, String country) {
         artistsData.put(artist, country);
         newData = true;
+    }
+
+    /** deletes all non-Cosmopolitune artists from the test cache **/
+    private static void cleanCache() {
+        assert Main.CHOSEN_METHOD != Main.SaveLoadMethod.BEANSTALK; // cache should only be cleaned locally
+
+        /* gets Cosmopolitune playlist artists */
+        ArrayList<Track> cosmoTracks = GetPlaylistTracks.getTracks("https://open.spotify.com/playlist/0PJ5WPdsEfvJkxdQEenKFF?si=CNMiNumIQKWP-WlFgphKHQ", true);
+        ArrayList<String> cosmoArtists = new ArrayList<>();
+        for (Track track : cosmoTracks) {
+            if (track == null) {
+                continue;
+            }
+            NewPlaylistRequest.appendArtist(cosmoArtists, track.getArtists());
+        }
+
+        final String saveLoadPath = "src\\main\\webapp\\testCache.txt";
+
+
+        /* loads and filters cache data */
+        StringBuilder newCache = new StringBuilder();
+        String currentLine;
+        try {
+            Scanner fileReader = new Scanner(new File(saveLoadPath));
+            String currentArtist;
+            while (fileReader.hasNextLine()) {
+                currentLine = fileReader.nextLine();
+                currentArtist = currentLine.split(CACHE_FIELD_SEP)[0];
+                if (cosmoArtists.contains(currentArtist)) {
+                    newCache.append(currentLine).append("\n");
+                }
+            }
+            fileReader.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new IllegalArgumentException();
+        }
+
+
+        /* saves data */
+        try {
+            OutputStreamWriter writer = new OutputStreamWriter(
+                    new FileOutputStream(saveLoadPath), StandardCharsets.UTF_8.newEncoder());
+            writer.write(newCache.toString());
+            writer.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new IllegalArgumentException();
+        }
+
+
+        System.out.println("Cache cleaned successfully.");
     }
 }
