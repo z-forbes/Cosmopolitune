@@ -1,24 +1,71 @@
-* {
- font-family: Arial;
+@font-face {
+  font-family: "PTSans";
+  src: url("font/PTSans-Regular.ttf");
 }
-
+@font-face {
+  font-family: "PTSans";
+  src: url("font/PTSans-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "PTSans";
+  src: url("font/PTSans-Italic.ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: "PTSans";
+  src: url("font/PTSans-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+* {
+ font-family: "PTSans", sans-serif;
+ color: #FFFFFF;
+}
 h1 {
 font-size: xxx-large;
-
+font-weight: bold;
 }
-
-h2 { font-size: xx-large; }
-
-p, h3, label {
-  color: grey;
+h2 {
+  font-size: xx-large;
 }
-a
- {
-  color: darkslategrey;
+h3 {
+  color: #FFFFFF;
+}
+label {
+  color: #FFFFFF;
+}
+p {
+  color: #FFFFFF;
+}
+a {
+  color: #1DB954;
   text-decoration: none;
 }
-a:hover { color:#264040 }
-
-body {
-  background-color: gainsboro;
+a:hover {
+  color:#264040;
 }
+body {
+  background-color: #191414;
+}
+input[type=text] {
+  background-color: #191414;
+  color: #FFFFFF;
+  border: none;
+  border-bottom: 2px solid #1DB954;
+}
+input[type=submit] {
+  background-color: #1DB954;
+  color: #FFFFFF;
+  border: none;
+  width: 100px;
+  border-radius: 15px;
+}
+iframe {
+    margin: 0 auto;
+    display: block;
+    padding: 8px;
+    border: none;
+    background: linear-gradient(to left, #1DB954, #B2FF59);
+    border-radius: 15px;
+  }
