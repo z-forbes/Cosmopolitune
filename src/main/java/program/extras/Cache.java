@@ -239,7 +239,6 @@ public class Cache {
             throw new IllegalArgumentException();
         }
 
-
         System.out.println("Cache cleaned successfully.");
     }
 }

@@ -1,5 +1,4 @@
 Vjollca Haxhiu<.>AL
-Eli Way<.>US
 Document One<.>GB
 KETTAMA<.>IE
 Neha Kakkar<.>IN
@@ -13,163 +12,91 @@ Dímelo Flow<.>PA
 The Allergies<.>[]
 Varun Dhawan<.>IN
 Owl Eyes<.>AU
-Mumford & Sons<.>GB
 Meda<.>[]
-Avicii<.>SE
-Kaskade<.>US
 Emmanuel Jal<.>SS
 Eva Ayllón<.>PE
-Rostam<.>US
 Myd<.>FR
-Kraak & Smaak<.>NL
-Chase & Status<.>GB
 Moonchild Sanelly<.>ZA
 Ezhel<.>TR
 Arcangel<.>[]
 Yeah Yeah Yeahs<.>US
 Yemi Alade<.>NG
-The Cardinall's Musick<.>GB
-Metronomy<.>GB
 Santaflow<.>ES
 Orchestre Symphonique de Montréal<.>CA
 Mar Antunes Fernandez<.>[]
 Bispo<.>PT
 Franco Peletti<.>[]
-The Mamas & The Papas<.>US
 Badshah<.>[]
-Jean Tonique<.>FR
 Nyaruach<.>SD
-Aquilo<.>GB
 Bacao Rhythm & Steel Band<.>DE
 Dur-Dur Band<.>SO
 Ministarke<.>RS
-William Byrd<.>GB
 Miloš Karadaglić<.>ME
-Girlpool<.>US
-Tom Misch<.>GB
 Daddy Yankee<.>PR
-Milky Chance<.>DE
 Behzad Leito<.>IR
 Galena<.>[]
 Tautumeitas<.>LV
 Busiswa<.>ZA
 Los Fabulosos Cadillacs<.>AR
-Nevada<.>SE
-Erlend Øye<.>NO
 88rising<.>US
 Rich Brian<.>ID
 Daniel Dimbas<.>[]
-Gopnik McBlyat<.>PL
 Acid Pauli<.>DE
 Amanaz<.>ZM
-Detroit Swindle<.>[]
 Tierra Whack<.>US
 Zombies In Miami<.>MX
-DJ Chus<.>ES
 Valentino<.>BA
 Sech<.>PA
 Gothenburg Symphony Orchestra<.>[]
 Lucas Sugo<.>UY
-Bear's Den<.>GB
 Nija<.>[]
-Baxter Dury<.>GB
 Jungle By Night<.>NL
 Mashrou' Leila<.>LB
 Higher Brothers<.>CN
 Francisco Tárrega<.>ES
-Daniel Caesar<.>CA
 Claudia Tejada<.>[]
-Chrome Sparks<.>US
-George Ezra<.>GB
-AnnenMayKantereit<.>DE
-Edouard Van Remoortel [Conductor]<.>[]
 Gold Ag<.>[]
-Bakermat<.>NL
-Aswad<.>GB
-Loyle Carner<.>GB
-Mathilda Homer<.>[]
 Ayub Ogada<.>KE
 Waterflame<.>NO
-Justin Bieber<.>CA
-Moi Je<.>[]
 Toots & The Maytals<.>JM
 Lucas Soto<.>[]
 Orchestra Baobab<.>SN
 Boncana Maïga<.>ML
-Hugo Bladel<.>[]
-Gordie MacKeeman and His Rhythm Boys<.>CA
 Kevin Lyttle<.>VC
-SuperParka<.>[]
-MAAD<.>IT
 Matias Bustillos<.>[]
 Natalia Gordienko<.>MD
-Panic! At The Disco<.>US
-Ultravox<.>GB
-Payfone<.>[]
-Yussef Dayes<.>[]
 SAINt JHN<.>US
 Ebo Taylor<.>GH
 Shazalakazoo<.>RS
-Girl Talk<.>US
-Monika<.>GR
-London Symphony Orchestra [Artist]<.>[]
 Nicola Cruz<.>EC
-Crackazat<.>[]
 Lionel Loueke<.>BJ
 Zonderling<.>NL
 Victor Démé<.>BF
-Jon Schmidt<.>US
-Dr. John<.>US
 Cristina Violle<.>[]
-Gorillaz<.>GB
-Tomppabeats<.>[]
-Various Artists<.>[]
 Etran Finatawa<.>NE
-Eminem<.>US
-slenderbodies<.>US
-be steadwell<.>US
 The Sistars<.>[]
 G.E.M.<.>HK
 Kyung Wha Chung<.>[]
 Ecco2k<.>SE
-Andrew Carwood<.>GB
 Ichisan<.>SI
-Mike Posner<.>US
 Demuja<.>AT
 Alexandra Stan<.>RO
 Netta<.>IL
-Carlos "Patato" Valdez<.>[]
-GoGo Penguin<.>GB
-Mr Jukes<.>GB
 Franck Biyong<.>CM
 A-Trak<.>CA
 Hassan Shakosh<.>EG
 Azymuth<.>BR
-Everything Everything<.>GB
 Ana Tijoux<.>CL
 KALEO<.>IS
-Sigala<.>GB
 Arve Henriksen<.>NO
-Nick Murphy<.>AU
 mabanua<.>JP
-Sleeptape<.>GB
-Skerryvore<.>GB
-Ludwig van Beethoven<.>DE
 Beyoncé<.>US
 Anita<.>[]
-Eris Drew<.>US
 Felix Mendelssohn<.>DE
-Hozier<.>IE
-Quantum<.>IL
-Punctual<.>[]
 DJ Lag<.>ZA
-Chaos In The CBD<.>GB
 Zeke Manyika<.>ZW
-BAYNK<.>NZ
-Tilly Valentine<.>[]
 Ricky Martin<.>PR
 Luis Peletti<.>[]
-Steely Dan<.>US
 Omar Kamal<.>EG
 Sebastian Yatra<.>[]
 Crazy Cousinz<.>GB
@@ -180,74 +107,40 @@ Irini Merkouri<.>GR
 Neeme Järvi<.>EE
 THE ROOP<.>LT
 Nailah Blackman<.>TT
-edbl<.>[]
 Swedish House Mafia<.>SE
 John Martin<.>[]
 Jan Bang<.>NO
 DJ Blyatman<.>SK
-The Pass<.>[]
 Toni Storaro<.>BG
 Junior Senior<.>DK
-Edward Elgar<.>GB
 Kelvin Jones<.>GB
 Manuel Turizo<.>CO
-Vitas<.>[]
-Little Simz<.>GB
 Melo<.>SE
 Massimiliano Pagliara<.>IT
-L'Impératrice<.>FR
-Wells Fargo<.>ZW
-Westerman<.>[]
-Dave Koor<.>[]
-The Steeldrivers<.>US
 Emiliano Cabrera<.>[]
 LemKuuja<.>JO
-Fat Freddy's Drop<.>NZ
 Julius Fučík<.>CZ
-La Comitiva<.>[]
-Tyler, The Creator<.>[]
-Jake Isaac<.>GB
-O'Flynn<.>GB
-Wayne Snow<.>DE
-Justice<.>FR
-Jeremy Blake<.>[]
-LAUSSE THE CAT<.>[]
 Imanbek<.>KZ
-Paper Void<.>US
 Joji<.>US
 Henrik Schwarz<.>DE
 Kaliopi<.>MK
-London Symphony Orchestra<.>GB
-Tony Allen<.>NG
 William & The Young Five<.>[]
 Eivind Aarset<.>NO
-Bran Mazz<.>[]
 Nathan Haines<.>NZ
 Diamond Platnumz<.>TZ
-Roddy Woomble<.>GB
 Lyanno<.>PR
 Russian Village Boys<.>RU
-Caravan Palace<.>FR
 Cheikha Rimitti<.>DZ
-Skepta<.>GB
 Shenseea<.>JM
 Disclosure<.>GB
-The Manhattan Transfer<.>US
-Marie Davidson<.>CA
-Vance Joy<.>AU
 Linying<.>SG
 Quantic<.>CO
-Gregory Porter<.>US
 Porta<.>ES
-Dr. Lonnie Smith<.>US
-Arctic Monkeys<.>GB
-Pharrell Williams<.>US
 Tabu Ley Rochereau<.>CD
 Cryptic Fate<.>BD
 Psy.P<.>CN
 AUGUST 08<.>US
 Eneyser<.>ES
-Jitwam<.>[]
 Palina<.>BY
 Free Flow Flava<.>RU
 Joseca<.>BO
@@ -255,60 +148,30 @@ Camo & Krooked<.>AT
 Deena Abdelwahed<.>TN
 Pat Thomas<.>GH
 Michelle Leclercq<.>[]
-MK<.>US
-Skip Mahoney<.>[]
 Kyla<.>PH
-Nautilus<.>DE
-Simian<.>GB
-LCD Soundsystem<.>US
 Iyaz<.>VG
 Mulatu Astatke<.>ET
-Two Door Cinema Club<.>GB
 Justin Quiles<.>PR
 Piso 21<.>CO
-Fast Eddie<.>GB
-The Big Moon<.>GB
-Justin Hurwitz<.>US
 Slyleaf<.>US
 Sofija Knezevic<.>[]
 Darude<.>FI
 Marcin Wasilewski Trio<.>PL
 Severina<.>HR
-OutKast<.>US
-John Carmichael & His Scottish Dance Band<.>[]
 Solardo<.>GB
 El Alfa<.>DO
 Thaiboy Digital<.>TH
-The Manor<.>[]
-Barry Tuckwell<.>AU
-Bunny Mack<.>GB
 Bladee<.>SE
-Novo Amor<.>GB
-James Brown<.>US
 Murda<.>[]
 FNX OMAR<.>[]
-Michael Bublé<.>CA
 Charles Dutoit<.>CH
-Flavien Berger<.>FR
 Aziza Brahim<.>EH
-Colin & Caroline<.>[]
-Peggy Gou<.>DE
-Elephant Sessions<.>GB
-Folamour<.>FR
 Lost Frequencies<.>BE
-Nilüfer Yanya<.>GB
 Zouk Machine<.>GP
-St. Paul & The Broken Bones<.>US
 Bonga<.>AO
-Michael Kiwanuka<.>GB
 Flowering Inferno<.>GB
-Maverick Sabre<.>GB
-Klangstof<.>NL
-¡Cubanismo!<.>[]
 Avoure<.>UA
-Seramic<.>[]
 Jerry Di<.>VE
 Antal<.>HU
-Kishi Bashi<.>US
 Alejandro Monsalvo<.>[]
 Tigran Hamasyan<.>AM

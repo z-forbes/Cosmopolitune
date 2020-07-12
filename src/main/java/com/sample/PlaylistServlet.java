@@ -27,7 +27,7 @@ public class PlaylistServlet extends HttpServlet {
         returnedData = null;
         link = "https://open.spotify.com/playlist/0PJ5WPdsEfvJkxdQEenKFF"; // link to the Cosmopolitune playlist
         returnedData = NewPlaylistRequest.newRequest(link);
-        req.setAttribute("playlistMapJS", updateColours(returnedData.getPlaylistMapJS()));
+        req.setAttribute("playlistMapJS", makeWaitMap(returnedData.getPlaylistMapJS()));
         req.setAttribute("playlistEmbed", returnedData.getPlaylistEmbed());
         req.setAttribute("redirect", "/cosmopolitune/playlist-map");
 
@@ -78,11 +78,10 @@ public class PlaylistServlet extends HttpServlet {
         returnedData = null;
     }
 
-    /** changes the colour gradient on the given map javascript **/
-    public static String updateColours(String originalJS) {
-//        final String newMin = "#ff9cc3";
-//        final String newMax = "#ff267d";
-//        return originalJS.replaceAll("colors: .*],", "colors: ['" + newMin + "', '" + newMax + "'],");
-        return originalJS; // need to find new colour scheme for the wait page's map
+    /** converts a normal map to a map on the waiting page **/
+    public static String makeWaitMap(String originalJS) {
+        final String newColour = "#7D7FFC";
+        String output = originalJS.replaceAll("colors: .*],", "colors: ['" + newColour + "', '" + newColour + "'],");
+        return output.replace("options = {", "options = {legend: 'hide', enableRegionInteractivity: 'false', ");
     }
 }

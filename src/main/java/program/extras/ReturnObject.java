@@ -114,7 +114,7 @@ public class ReturnObject {
                 mkData(artists) +
                 "        ]);\n" +
                 "\n" +
-                "        var options = " +
+                "        var options = " + // changing this line will break PlaylistServlet.makeWaitMap
                     "{minValue: 0," +
                     "colors: ['" + MIN_COLOUR + "', '" + MAX_COLOUR + "']," +
                     "backgroundColor: '" + BG_COLOUR + "'," +
