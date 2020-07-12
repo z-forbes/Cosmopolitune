@@ -61,11 +61,25 @@ input[type=submit] {
   width: 100px;
   border-radius: 15px;
 }
-iframe {
+.framedLeft {
+    background: linear-gradient(to left, #1DB954, #B2FF59);
+    height: 380px;
     margin: 0 auto;
     display: block;
     padding: 8px;
     border: none;
-    background: linear-gradient(to left, #1DB954, #B2FF59);
     border-radius: 15px;
+    frameborder: 2px;
+    vertical-align: top;
+  }
+.framedRight {
+    background: linear-gradient(to right, #1DB954, #B2FF59);
+    height: 380px;
+    margin: 0 auto;
+    display: block;
+    padding: 8px;
+    border: none;
+    border-radius: 15px;
+    frameborder: 2px;
+    vertical-align: top;
   }

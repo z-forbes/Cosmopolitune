@@ -39,8 +39,8 @@ String newCountriesMessage = (String) request.getAttribute("newCountriesMessage"
 
     <h3>Here's your map:</h3>
     <p><% out.println(newCountriesMessage); %></p>
-    <div id="regions_div" style="display:inline-block;"></div>
-    <div style="display:inline-block;"><% out.println(playlistEmbed); %></div>
+    <div class="framedRight" id="regions_div" style="display:inline-block;"></div>
+    <div class="framedLeft" style="display:inline-block;"><% out.println(playlistEmbed); %></div>
     <div style="display:inline-block"><br><br></div>
 
     <p><% out.println(successMessage); %></p>

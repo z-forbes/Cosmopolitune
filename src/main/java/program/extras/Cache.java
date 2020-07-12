@@ -34,9 +34,9 @@ public class Cache {
 
     /** hashmap containing data from the cache **/
     private HashMap<String, String> artistsData = new HashMap<String, String>();
-    /** true if the data has been loaded, false otherwise **/
+    /** true iff the data has been loaded **/
     private boolean dataLoaded;
-    /** true if new data has been loaded, used to prevent unnecessary api calls **/
+    /** true iff new data has been loaded, used to prevent unnecessary api calls **/
     private boolean newData;
 
 

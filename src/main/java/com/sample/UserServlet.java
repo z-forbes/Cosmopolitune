@@ -1,5 +1,6 @@
 package com.sample;
 
+import com.wrapper.spotify.model_objects.specification.Playlist;
 import program.extras.ReturnObject;
 import program.playlist.NewPlaylistRequest;
 import program.user.NewUserRequest;
@@ -48,7 +49,7 @@ public class UserServlet extends HttpServlet {
         if (!waitPageLoaded) {
             String link = "https://open.spotify.com/playlist/0PJ5WPdsEfvJkxdQEenKFF"; // link to the Cosmopolitune playlist
             returnedData = NewPlaylistRequest.newRequest(link);
-            req.setAttribute("playlistMapJS", updateColours(returnedData.getPlaylistMapJS()));
+            req.setAttribute("playlistMapJS", PlaylistServlet.updateColours(returnedData.getPlaylistMapJS()));
             req.setAttribute("playlistEmbed", returnedData.getPlaylistEmbed());
             req.setAttribute("redirect", "/cosmopolitune/user-map");
             returnedData = null;
@@ -98,12 +99,5 @@ public class UserServlet extends HttpServlet {
         waitPageLoaded = false;
         returnedData = null;
         code = null;
-    }
-
-    /** changes the colour gradient on the given map javascript **/
-    private static String updateColours(String originalJS) {
-        final String newMin = "#ff9cc3";
-        final String newMax = "#ff267d";
-        return originalJS.replaceAll("colors: .*],", "colors: ['" + newMin + "', '" + newMax + "'],");
     }
 }

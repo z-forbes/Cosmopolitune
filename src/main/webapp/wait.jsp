@@ -45,9 +45,9 @@ String playlistEmbed = (String) request.getAttribute("playlistEmbed");
     <p>Check out this playlist, it contains at least one song from every country ever seen by Cosmopolitune.</p>
     <p>Find an artist from a new country and it'll be added here!</p>
 
-    <div style="display:inline-block;"><% out.println(playlistEmbed); %></div>
+    <div class="framedRight" style="display:inline-block;"><% out.println(playlistEmbed); %></div>
     <div style="display:inline-block"><br><br></div>
-    <div id="regions_div" style="height: 380px; display:inline-block;"></div>
+    <div class="framedLeft" id="regions_div" style="display:inline-block;" ></div>
 
     <div>
         <br><br><br>

@@ -49,22 +49,23 @@ String usedItems = (String) request.getAttribute("usedItemsStr");
     <h3><% out.println(welcomeMessage); %></h3>
     <div class="map_div">
         <h3>Followed Artists</h3>
-        <div id="artists_div" class="map"></div>
+        <div class="framedRight" id="artists_div" style="height:inherit; width:650px"></div>
         <p><% out.println(artistsSuccessMessage); %></p>
     </div>
     <div class="map_div">
         <h3>Saved Albums</h3>
-        <div id="albums_div" class="map"></div>
+        <div id="albums_div" class="framedLeft" style="height:inherit; width:650px"></div>
         <p><% out.println(albumsSuccessMessage); %></p>
     </div>
+    <br>
     <div class="map_div">
         <h3>Saved Tracks</h3>
-        <div id="tracks_div" class="map"></div>
+        <div id="tracks_div" class="framedRight" style="height:inherit; width:650px"></div>
         <p><% out.println(tracksSuccessMessage); %></p>
     </div>
     <div class="map_div">
         <h3>All Combined</h3>
-        <div id="together_div" class="map"></div>
+        <div id="together_div" class="framedLeft" style="height:inherit; width:650px"></div>
         <p><% out.println(togetherSuccessMessage); %></p>
     </div>
 

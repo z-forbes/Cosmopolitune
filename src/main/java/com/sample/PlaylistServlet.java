@@ -79,9 +79,10 @@ public class PlaylistServlet extends HttpServlet {
     }
 
     /** changes the colour gradient on the given map javascript **/
-    private static String updateColours(String originalJS) {
-        final String newMin = "#ff9cc3";
-        final String newMax = "#ff267d";
-        return originalJS.replaceAll("colors: .*],", "colors: ['" + newMin + "', '" + newMax + "'],");
+    public static String updateColours(String originalJS) {
+//        final String newMin = "#ff9cc3";
+//        final String newMax = "#ff267d";
+//        return originalJS.replaceAll("colors: .*],", "colors: ['" + newMin + "', '" + newMax + "'],");
+        return originalJS; // need to find new colour scheme for the wait page's map
     }
 }

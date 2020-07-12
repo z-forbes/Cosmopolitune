@@ -24,7 +24,7 @@ String errorMessage = (String) request.getAttribute("errorMessage");
         <br>
         <div>
             <label for="link">Enter a link to a Spotify playlist:</label><br><br>
-            <input type="text" id="link" name="link" placeholder="Make sure it's public" size="30" required>
+            <input type="text" id="link" name="link" placeholder="Make sure it's public" size="50" required>
         </div>
         <div>
             <br>
@@ -33,13 +33,14 @@ String errorMessage = (String) request.getAttribute("errorMessage");
         </div>
     </form>
     <form method="post" action="user-map">
-        <p>Or make maps based on your library:</p>
+        <label for="link">Or make maps based on your library:</label><br><br>
         <input type="submit" value="Make Maps">
     </form>
     <br><br>
-    <div>
-        <p>The Cosmopolitune playlist contains songs covering every country seen by this app.</p>
-        <iframe src="https://open.spotify.com/embed/playlist/0PJ5WPdsEfvJkxdQEenKFF" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe><br>
+    <div style="display: inline-block; vertical-align: top;">
+        <p>This playlist contains songs covering every country seen by this app.</p>
+        <iframe src="https://open.spotify.com/embed/playlist/0PJ5WPdsEfvJkxdQEenKFF" width="400" height="400" allowtransparency="true" allow="encrypted-media" class="framedRight"></iframe>
+        <br>
         <br>
         <form name="submitForm" method="POST" action="playlist-map">
             <input type="hidden" name="link" value="https://open.spotify.com/playlist/0PJ5WPdsEfvJkxdQEenKFF">
@@ -47,19 +48,22 @@ String errorMessage = (String) request.getAttribute("errorMessage");
         </form>
 
     </div>
-    <br><br><br>
-    <h2 style="font-size:x-large">Thanks to:</h2><br>
-    <table style="text-align: center; width:400px;">
-        <tr>
-            <td><a href="https://github.com/thelinmichael/spotify-web-api-java">thelinmichael on Github</a><br><br></td>
-            <td><a href="https://developer.spotify.com/documentation/web-api/">The Spotify Web API</a><br><br></td>
-        </tr>
-        <tr>
-            <td><a href="https://musicbrainz.org/">MusicBrainz</a><br><br></td>
-            <td><a href="https://developers.google.com/chart/interactive/docs/gallery/geochart">Google Charts</a><br><br></td>
-        </tr>
-    </table>
-    <td><p>Members of <a href="https://www.facebook.com/groups/297245530737226/">Guess the Map</a> for their feedback</p><br><br></td>
+    <div style="display: inline-block; vertical-align: top;">
+        <br><br><br>
+        <h2 style="font-size:x-large">Thanks to:</h2><br>
+        <p><a href="https://github.com/crayarikar">crayarikar</a> for design improvements.</p><br>
+        <table style="text-align: center; width:400px;">
+            <tr>
+                <td><a href="https://github.com/thelinmichael/spotify-web-api-java">thelinmichael</a><br><br></td>
+                <td><a href="https://developer.spotify.com/documentation/web-api/">The Spotify Web API</a><br><br></td>
+            </tr>
+            <tr>
+                <td><a href="https://musicbrainz.org/">MusicBrainz</a><br><br></td>
+                <td><a href="https://developers.google.com/chart/interactive/docs/gallery/geochart">Google Charts</a><br><br></td>
+            </tr>
+        </table>
+        <p>Members of <a href="https://www.facebook.com/groups/297245530737226/">Guess the Map</a> for their feedback.</p><br><br>
+    </div>
     <div>
         <br><br>
         <p>Made by <a href="https://lewisforbes.com/">Lewis Forbes</a></p>
