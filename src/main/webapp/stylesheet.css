@@ -54,15 +54,16 @@ input[type=text] {
   border: none;
   border-bottom: 2px solid #1DB954;
 }
-input[type=submit] {
-  background-color: #1DB954;
-  color: #FFFFFF;
-  border: none;
-  width: 100px;
-  border-radius: 15px;
-}
 
 @media only screen and (min-width: 1001px) {
+    input[type=submit] {
+        background-color: #1DB954;
+        color: #FFFFFF;
+        border: none;
+        width: 100px;
+        border-radius: 15px;
+    }
+
     .framedFirst {
         background: linear-gradient(to right, #1DB954, #B2FF59);
         height: 380px;
@@ -89,6 +90,15 @@ input[type=submit] {
 }
 
 @media only screen and (max-width: 1000px) {
+
+    input[type=submit] {
+        background-color: #1DB954;
+        color: #000000;
+        border: none;
+        width: 100px;
+        border-radius: 15px;
+    }
+
     .framedFirst {
         background: linear-gradient(to bottom, #1DB954, #B2FF59);
         height: 380px;
