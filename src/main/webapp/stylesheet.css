@@ -61,25 +61,55 @@ input[type=submit] {
   width: 100px;
   border-radius: 15px;
 }
-.framedLeft {
-    background: linear-gradient(to left, #1DB954, #B2FF59);
-    height: 380px;
-    margin: 0 auto;
-    display: block;
-    padding: 8px;
-    border: none;
-    border-radius: 15px;
-    frameborder: 2px;
-    vertical-align: top;
-  }
-.framedRight {
-    background: linear-gradient(to right, #1DB954, #B2FF59);
-    height: 380px;
-    margin: 0 auto;
-    display: block;
-    padding: 8px;
-    border: none;
-    border-radius: 15px;
-    frameborder: 2px;
-    vertical-align: top;
-  }
+
+@media only screen and (min-width: 1001px) {
+    .framedFirst {
+        background: linear-gradient(to right, #1DB954, #B2FF59);
+        height: 380px;
+        margin: 0 auto;
+        display: block;
+        padding: 8px;
+        border: none;
+        border-radius: 15px;
+        frameborder: 2px;
+        vertical-align: top;
+    }
+
+    .framedLast {
+        background: linear-gradient(to left, #1DB954, #B2FF59);
+        height: 380px;
+        margin: 0 auto;
+        display: block;
+        padding: 8px;
+        border: none;
+        border-radius: 15px;
+        frameborder: 2px;
+        vertical-align: top;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .framedFirst {
+        background: linear-gradient(to bottom, #1DB954, #B2FF59);
+        height: 380px;
+        margin: 0 auto;
+        display: block;
+        padding: 8px;
+        border: none;
+        border-radius: 15px;
+        frameborder: 2px;
+        vertical-align: top;
+    }
+
+    .framedLast {
+        background: linear-gradient(to top, #1DB954, #B2FF59);
+        height: 380px;
+        margin: 0 auto;
+        display: block;
+        padding: 8px;
+        border: none;
+        border-radius: 15px;
+        frameborder: 2px;
+        vertical-align: top;
+    }
+}

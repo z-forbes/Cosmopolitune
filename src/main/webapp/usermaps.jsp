@@ -16,17 +16,27 @@
     <style>
         @media only screen and (max-width: 1000px) {
             .map {
-                width:99%;
+                height: inherit;
+                width:95%;
             }
 
+            .hide_on_mobile {
+                display: none;
+            }
         }
+
+
         @media only screen and (min-width: 1001px) {
             .map {
-                height: 380px;
+                height: inherit;
                 width: 650px
             }
             .map_div {
                 display: inline-block;
+            }
+
+            .hide_on_desktop {
+                display: none;
             }
         }
     </style>
@@ -49,31 +59,32 @@ String usedItems = (String) request.getAttribute("usedItemsStr");
     <h3><% out.println(welcomeMessage); %></h3>
     <div class="map_div">
         <h3>Followed Artists</h3>
-        <div class="framedRight" id="artists_div" style="height:inherit; width:650px"></div>
+        <div id="artists_div" class="framedFirst map"></div>
         <p><% out.println(artistsSuccessMessage); %></p>
     </div>
     <div class="map_div">
         <h3>Saved Albums</h3>
-        <div id="albums_div" class="framedLeft" style="height:inherit; width:650px"></div>
+        <div id="albums_div" class="framedLast map"></div>
         <p><% out.println(albumsSuccessMessage); %></p>
     </div>
-    <br>
+    <br class="hide_on_mobile">
     <div class="map_div">
         <h3>Saved Tracks</h3>
-        <div id="tracks_div" class="framedRight" style="height:inherit; width:650px"></div>
+        <div id="tracks_div" class="framedFirst map"></div>
         <p><% out.println(tracksSuccessMessage); %></p>
     </div>
     <div class="map_div">
         <h3>All Combined</h3>
-        <div id="together_div" class="framedLeft" style="height:inherit; width:650px"></div>
+        <div id="together_div" class="framedLast map"></div>
         <p><% out.println(togetherSuccessMessage); %></p>
     </div>
 
     <p><% out.println(newCountriesMessage); %></p>
+    <br><br>
     <p>Currently, only the <% out.println(usedItems); %> most recent followed artists, saved albums and saved tracks are considered.</p>
     <br>
     <h3><a href="index.html">Make Another!</a></h3>
-    <br><br>
+    <div class="hide_on_desktop"><br><br></div>
     <div>
         <p>Made by <a href="https://lewisforbes.com/">Lewis Forbes</a></p>
         <p>Code available on <a href="https://github.com/lewisforbes/Cosmopolitune">GitHub</a></p>

@@ -15,13 +15,30 @@
     </script>
     <style>
         @media only screen and (max-width: 1000px) {
+            .hide_on_mobile {
+                display: none;
+            }
+
+            #playlist {
+                width: 80%;
+                height: 300px
+            }
+
             #regions_div {
-                width:99%;
+                width: 95%;
+                height: inherit;
             }
         }
+
+
         @media only screen and (min-width: 1001px) {
-            #regions_div {
-                height: 380px;
+            .hide_on_desktop {
+                display: none;
+            }
+
+            .desktop_inline {
+                display: inline-block;
+                vertical-align: middle;
             }
         }
     </style>
@@ -39,9 +56,10 @@ String newCountriesMessage = (String) request.getAttribute("newCountriesMessage"
 
     <h3>Here's your map:</h3>
     <p><% out.println(newCountriesMessage); %></p>
-    <div class="framedRight" id="regions_div" style="display:inline-block;"></div>
-    <div class="framedLeft" style="display:inline-block;"><% out.println(playlistEmbed); %></div>
-    <div style="display:inline-block"><br><br></div>
+    <div class="framedFirst desktop_inline" id="regions_div"></div>
+    <div class="hide_on_desktop"><br></div>
+    <div class="desktop_inline"><% out.println(playlistEmbed); %> id="playlist" class="framedLast"></iframe></div>
+
 
     <p><% out.println(successMessage); %></p>
     <br>

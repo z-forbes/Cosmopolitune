@@ -261,7 +261,7 @@ public class ReturnObject {
     /** produces HTML to embed the program.user's playlist **/
     private static String mkPlaylistEmbed(String url) {
         final String id = GetPlaylistTracks.URLtoID(url);
-        return "<iframe src=\"https://open.spotify.com/embed/playlist/" + id + "\" width=\"300\" height=\"380\" frameborder=\"0\" allowtransparency=\"true\" allow=\"encrypted-media\"></iframe>";
+        return "<iframe src=\"https://open.spotify.com/embed/playlist/" + id + "\" allowtransparency=\"true\" allow=\"encrypted-media\"";
     }
 
     /** generates and returns the successMessage string **/
