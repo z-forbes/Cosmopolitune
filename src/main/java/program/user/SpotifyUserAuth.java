@@ -24,7 +24,7 @@ public class SpotifyUserAuth {
     private static final URI redirectUri = SpotifyHttpManager.makeUri(getRedirectURI());
     private static String getRedirectURI() {
         if (Main.CHOSEN_METHOD == Main.SaveLoadMethod.BEANSTALK) {
-            return "http://lewis-forbes.us-east-2.elasticbeanstalk.com/cosmopolitune/user-map";
+            return "http://cosmopolitune.us-east-2.elasticbeanstalk.com/user-map";
         } else {
             return "http://localhost:8080/cosmopolitune/user-map";
         }

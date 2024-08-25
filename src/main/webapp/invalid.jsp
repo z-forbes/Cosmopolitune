@@ -14,7 +14,7 @@ String errorMessage = (String) request.getAttribute("errorMessage");
 %>
 <center>
     <h1>
-        <a href="http://lewis-forbes.us-east-2.elasticbeanstalk.com/cosmopolitune" style="color:inherit">Cosmopolitune</a>
+        <a href="http://cosmopolitune.us-east-2.elasticbeanstalk.com/" style="color:inherit">Cosmopolitune</a>
     </h1>
     <h3>
         See how diverse your playlists are!
@@ -69,8 +69,8 @@ String errorMessage = (String) request.getAttribute("errorMessage");
 
     <div>
         <br><br>
-        <p>Made by <a href="https://lewisforbes.com/">Lewis Forbes</a></p>
-        <p>Code available on <a href="https://github.com/lewisforbes/Cosmopolitune">GitHub</a></p>
+        <p>Made by <a href="https://zoeforbes.cc/">Zoe Forbes</a></p>
+        <p>Code available on <a href="https://github.com/z-forbes/Cosmopolitune">GitHub</a></p>
     </div>
 </center>
 </body>

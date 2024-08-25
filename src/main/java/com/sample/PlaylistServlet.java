@@ -1,5 +1,7 @@
 package com.sample;
 
+import program.Main;
+import program.Main.SaveLoadMethod;
 import program.extras.ReturnObject;
 import program.playlist.GetPlaylistTracks;
 import program.playlist.NewPlaylistRequest;
@@ -34,7 +36,12 @@ public class PlaylistServlet extends HttpServlet {
 
         req.setAttribute("playlistMapJS", makeWaitMap(returnedData.getPlaylistMapJS())); 
         req.setAttribute("playlistEmbed", returnedData.getPlaylistEmbed());
-        req.setAttribute("redirect", "/cosmopolitune/playlist-map");
+        if (Main.CHOSEN_METHOD == SaveLoadMethod.BEANSTALK) {
+            req.setAttribute("redirect", "/playlist-map");
+        }
+        else {
+            req.setAttribute("redirect", "/cosmopolitune/playlist-map");
+        }
 
         link = req.getParameter("link");
         returnedData = null;

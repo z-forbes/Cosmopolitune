@@ -101,7 +101,7 @@ input[type=text] {
 
     .framedFirst {
         background: linear-gradient(to bottom, #1DB954, #B2FF59);
-        height: 380px;
+        height: 152px;
         margin: 0 auto;
         display: block;
         padding: 8px;
@@ -113,7 +113,7 @@ input[type=text] {
 
     .framedLast {
         background: linear-gradient(to top, #1DB954, #B2FF59);
-        height: 380px;
+        height: 152px;
         margin: 0 auto;
         display: block;
         padding: 8px;

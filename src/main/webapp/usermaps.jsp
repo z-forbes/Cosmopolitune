@@ -53,7 +53,7 @@ String usedItems = (String) request.getAttribute("usedItemsStr");
 %>
 <center>
     <h1>
-        <a href="http://lewis-forbes.us-east-2.elasticbeanstalk.com/cosmopolitune" style="color:inherit">Cosmopolitune</a>
+        <a href="http://cosmopolitune.us-east-2.elasticbeanstalk.com/" style="color:inherit">Cosmopolitune</a>
     </h1>
 
     <h3><% out.println(welcomeMessage); %></h3>
@@ -86,8 +86,8 @@ String usedItems = (String) request.getAttribute("usedItemsStr");
     <h3><a href="index.html">Make Another!</a></h3>
     <div class="hide_on_desktop"><br><br></div>
     <div>
-        <p>Made by <a href="https://lewisforbes.com/">Lewis Forbes</a></p>
-        <p>Code available on <a href="https://github.com/lewisforbes/Cosmopolitune">GitHub</a></p>
+        <p>Made by <a href="https://zoeforbes.cc/">Zoe Forbes</a></p>
+        <p>Code available on <a href="https://github.com/z-forbes/Cosmopolitune">GitHub</a></p>
     </div>
 </center>
 </body>

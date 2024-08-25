@@ -54,7 +54,7 @@ String playlistEmbed = (String) request.getAttribute("playlistEmbed");
 %>
 <center>
     <h1>
-        <a href="http://lewis-forbes.us-east-2.elasticbeanstalk.com/cosmopolitune" style="color:inherit">Cosmopolitune</a>
+        <a href="http://cosmopolitune.us-east-2.elasticbeanstalk.com/" style="color:inherit">Cosmopolitune</a>
     </h1>
     <h2>While you wait...</h2>
     <h3>You'll have to wait around two seconds for every artist in your playlist that Cosmopolitune's never seen before.</h3>
@@ -72,8 +72,8 @@ String playlistEmbed = (String) request.getAttribute("playlistEmbed");
 
     <div>
         <br><br><br>
-        <p>Made by <a href="https://lewisforbes.com/">Lewis Forbes</a></p>
-        <p>Code available on <a href="https://github.com/lewisforbes/Cosmopolitune">GitHub</a></p>
+        <p>Made by <a href="https://zoeforbes.cc/">Zoe Forbes</a></p>
+        <p>Code available on <a href="https://github.com/z-forbes/Cosmopolitune">GitHub</a></p>
     </div>
 </center>
 </body>

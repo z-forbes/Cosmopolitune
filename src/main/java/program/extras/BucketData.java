@@ -19,7 +19,7 @@ public class BucketData {
     /** the region of the bucket **/
     private static final Regions CLIENT_REGION = Regions.US_EAST_2;
     /** the name of the bucket **/
-    private static final String BUCKET_NAME = "elasticbeanstalk-us-east-2-128224929684";
+    private static final String BUCKET_NAME = "elasticbeanstalk-us-east-2-605134434943";
     /** the path of the cache in the bucket **/
     private static final String KEY = "cache/cache.txt";
 
