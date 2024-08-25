@@ -1,4 +1,6 @@
-## under active development (after a few years). working to get it hosted.
+# in process of cleaning up code!
+
+## [demo video](https://ed-ac-uk.zoom.us/rec/play/BPXN4VskzRS-DQeKuFWTIHrMbDZejTTCFSM2issGKxspfJl9cCYRM9C-ciLeRID4D0-KBUZSJve4wJ5I.Gb3GQjbgyUMnUHg1)
 
 ## to run (I'm on Windows 11):
 
