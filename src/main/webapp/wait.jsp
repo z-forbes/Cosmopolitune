@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
     <title>Cosmopolitune</title>
-    <meta http-equiv="Refresh" content="<%=content %>" />
+<!--    <meta http-equiv="Refresh" content="<%=content %>" />-->
 
     <style>
         @media only screen and (max-width: 1000px) {
@@ -56,11 +56,12 @@ String playlistEmbed = (String) request.getAttribute("playlistEmbed");
     <h1>
         <a href="http://lewis-forbes.us-east-2.elasticbeanstalk.com/cosmopolitune" style="color:inherit">Cosmopolitune</a>
     </h1>
-
     <h2>While you wait...</h2>
     <h3>You'll have to wait around two seconds for every artist in your playlist that Cosmopolitune's never seen before.</h3>
     <h3>Once your map is ready, you'll be automatically redirected.</h3>
 
+    <br class="hide_on_desktop">
+    <p class="hide_on_desktop" style="color:red;">This page usually doesn't fully load on mobile.<br>Use desktop!</p>
     <br><br class="hide_on_mobile">
 
     <p>Check out this playlist, it contains at least one song from every country ever seen by Cosmopolitune.</p>

@@ -1,6 +1,7 @@
 package com.sample;
 
 import program.extras.ReturnObject;
+import program.playlist.GetPlaylistTracks;
 import program.playlist.NewPlaylistRequest;
 
 import javax.servlet.RequestDispatcher;
@@ -9,6 +10,9 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import com.wrapper.spotify.model_objects.specification.Track;
+
 import java.io.IOException;
 
 @WebServlet(
@@ -27,7 +31,8 @@ public class PlaylistServlet extends HttpServlet {
         returnedData = null;
         link = "https://open.spotify.com/playlist/0PJ5WPdsEfvJkxdQEenKFF"; // link to the Cosmopolitune playlist
         returnedData = NewPlaylistRequest.newRequest(link);
-        req.setAttribute("playlistMapJS", makeWaitMap(returnedData.getPlaylistMapJS()));
+
+        req.setAttribute("playlistMapJS", makeWaitMap(returnedData.getPlaylistMapJS())); 
         req.setAttribute("playlistEmbed", returnedData.getPlaylistEmbed());
         req.setAttribute("redirect", "/cosmopolitune/playlist-map");
 

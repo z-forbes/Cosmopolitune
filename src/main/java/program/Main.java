@@ -18,7 +18,7 @@ public class Main {
 
     /** the different methods for saving and loading the cache **/
     public enum SaveLoadMethod {BEANSTALK, LOCAL_HOST, TERMINAL}
-    public static final SaveLoadMethod CHOSEN_METHOD = SaveLoadMethod.BEANSTALK; // unless testing, use BEANSTALK
+    public static final SaveLoadMethod CHOSEN_METHOD = SaveLoadMethod.LOCAL_HOST; // unless testing, use BEANSTALK
 
     /** the maximum number of artists allowed in a playlist **/
     private static final int MAX_ARTISTS = 150;

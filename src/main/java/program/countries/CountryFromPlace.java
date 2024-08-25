@@ -65,7 +65,6 @@ public class CountryFromPlace {
 
         String output = relevantLine.substring(relevantLine.indexOf(before) + before.length());
         output = output.substring(0, output.indexOf(after));
-
         assert isCode(output);
         return output;
     }
@@ -75,7 +74,7 @@ public class CountryFromPlace {
         String[] responseArray = fullResponse.split("\n");
         for (int i=0; i<responseArray.length; i++) {
             if (responseArray[i].contains("\"country\"")) {
-                return responseArray[i-1];
+                return responseArray[i-3]; /*  TODO changed this from i-1 to i-3 */ 
             }
         }
         throw new IllegalArgumentException("Was unable to find the target line in the response:\n" + fullResponse);
